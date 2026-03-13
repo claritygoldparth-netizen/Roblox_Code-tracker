@@ -4,7 +4,7 @@ import os
 from datetime import datetime, date
 
 app = Flask(__name__)
-DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "codes.db")
+DB = os.path.join(os.environ.get("TMPDIR", "/tmp"), "codes.db")
 
 GAMES = [
     "Blox Fruits", "Anime Card Clash", "Bubble Gum Simulator",
