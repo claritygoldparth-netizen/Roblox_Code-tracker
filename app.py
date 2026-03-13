@@ -562,10 +562,12 @@ def delete_code(code_id):
     return redirect(request.referrer or url_for("index"))
 
 
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     print("\n🎮 Roblox Code Vault is running!")
     print("Open this in your browser: http://localhost:5000")
     print("Others on your network can visit: http://<your-ip>:5000")
     print("Press CTRL+C to stop.\n")
     app.run(host="0.0.0.0", port=5000, debug=False)
+
