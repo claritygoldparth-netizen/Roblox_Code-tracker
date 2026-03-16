@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔒 Premium Access - Code Vault</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f0f1a; color: #eaeaea; font-family: 'Segoe UI', sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .card { background: #16213e; border: 1px solid #2a2a4a; border-radius: 16px; padding: 32px; max-width: 440px; width: 100%; }
+  .lock-icon { font-size: 44px; text-align: center; margin-bottom: 12px; }
+  h1 { font-size: 22px; font-weight: 700; text-align: center; margin-bottom: 6px; }
+  .sub { color: #888; font-size: 13px; text-align: center; margin-bottom: 16px; line-height: 1.5; }
+  .price-badge { background: #1D9E75; color: #fff; border-radius: 20px; padding: 6px 16px; display: inline-block; font-weight: 700; font-size: 14px; margin: 0 auto 20px; display: block; text-align: center; width: fit-content; margin: 0 auto 20px; }
+  .games-list { background: #0f0f1a; border-radius: 10px; padding: 12px; margin-bottom: 20px; }
+  .games-list p { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .game-tag { display: inline-block; background: #2a2a4a; border-radius: 6px; padding: 4px 10px; font-size: 12px; margin: 3px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #aaa; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .payment-methods { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+  .pay-btn { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 10px; padding: 14px 10px; text-align: center; cursor: pointer; transition: border-color 0.2s; }
+  .pay-btn:hover { border-color: #1D9E75; background: #0d2a1f; }
+  .pay-btn.selected { border-color: #1D9E75; background: #0d2a1f; }
+  .pay-btn .icon { font-size: 24px; margin-bottom: 4px; }
+  .pay-btn .name { font-size: 13px; font-weight: 600; }
+  .pay-btn .detail { font-size: 11px; color: #888; }
+  .divider { border: none; border-top: 1px solid #2a2a4a; margin: 16px 0; }
+  .instruction { background: #1a1a2e; border: 1px solid #2a2a4a; border-radius: 10px; padding: 14px; margin-bottom: 16px; font-size: 13px; color: #aaa; display: none; }
+  .instruction.show { display: block; }
+  .instruction strong { color: #fff; }
+  .instruction .upi { font-size: 16px; font-weight: 700; color: #1D9E75; letter-spacing: 1px; display: block; margin: 8px 0; }
+  input[type=password] { width: 100%; background: #0f0f1a; border: 1px solid #2a2a4a; color: #eaeaea; padding: 11px 14px; border-radius: 10px; font-size: 14px; outline: none; margin-bottom: 10px; letter-spacing: 2px; }
+  input[type=password]:focus { border-color: #1D9E75; }
+  .unlock-btn { width: 100%; background: #1D9E75; color: #fff; border: none; padding: 12px; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; }
+  .unlock-btn:hover { background: #0F6E56; }
+  .error { background: #3a1a1a; border: 1px solid #c0392b; color: #e74c3c; border-radius: 8px; padding: 10px; margin-bottom: 10px; font-size: 13px; }
+  .back { margin-top: 14px; font-size: 13px; color: #888; text-align: center; }
+  .back a { color: #1D9E75; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="lock-icon">🔒</div>
+  <h1>Premium Access</h1>
+  <p class="sub">Unlock codes for non-Roblox games!</p>
+  <div class="price-badge">₹10 / month</div>
+
+  <div class="games-list">
+    <p>🎮 Games included:</p>
+    <span class="game-tag">Genshin Impact</span>
+    <span class="game-tag">Honkai Star Rail</span>
+    <span class="game-tag">Pokémon GO</span>
+    <span class="game-tag">AFK Arena</span>
+    <span class="game-tag">Mech Arena</span>
+  </div>
+
+  <p class="section-title">Step 1 — Pay ₹10</p>
+  <div class="payment-methods">
+    <div class="pay-btn" onclick="selectPay(this, 'phonepe')">
+      <div class="icon">💜</div>
+      <div class="name">PhonePe</div>
+      <div class="detail">UPI Payment</div>
+    </div>
+    <div class="pay-btn" onclick="selectPay(this, 'gpay')">
+      <div class="icon">🔵</div>
+      <div class="name">Google Pay</div>
+      <div class="detail">UPI Payment</div>
+    </div>
+    <div class="pay-btn" onclick="selectPay(this, 'paytm')">
+      <div class="icon">🔷</div>
+      <div class="name">Paytm</div>
+      <div class="detail">UPI Payment</div>
+    </div>
+    <div class="pay-btn" onclick="selectPay(this, 'upi')">
+      <div class="icon">🏦</div>
+      <div class="name">Any UPI App</div>
+      <div class="detail">Direct UPI ID</div>
+    </div>
+  </div>
+
+  <div class="instruction" id="pay-instruction">
+    <strong>Send ₹10 to:</strong>
+    <span class="upi">yourname@upi</span>
+    After payment, message the owner to get your unique password!
+  </div>
+
+  <hr class="divider">
+  <p class="section-title">Step 2 — Enter Password</p>
+  <p class="sub" style="margin-bottom:12px;">Already paid? Enter your password below.</p>
+
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+
+  <form method="POST">
+    <input type="password" name="password" placeholder="Enter your password..." autofocus>
+    <button type="submit" class="unlock-btn">🔓 Unlock Premium</button>
+  </form>
+  <div class="back"><a href="/">← Back to free codes</a></div>
+</div>
+
+<script>
+function selectPay(el, method) {
+  document.querySelectorAll('.pay-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('pay-instruction').classList.add('show');
+}
+</script>
+</body>
+</html>
