@@ -26,7 +26,7 @@ ROBLOX_GAMES = [
     "Jailbreak", "Adopt Me!", "Murder Mystery 2", "Tower of Hell",
     "Brookhaven", "Royale High", "Doors", "Anime Adventures",
     "Sol's RNG", "Arcane Odyssey", "Muscle Legends", "Dragon Blox",
-    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Other"
+    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Other"
 ]
 
 PREMIUM_GAMES = [
@@ -605,6 +605,119 @@ PRELOADED_CODES = [
     ("icecold", "Arm Wrestle Simulator", "3x boost for 24 hours", ""),
     ("forging", "Arm Wrestle Simulator", "3x boost for 24 hours", ""),
     ("axel", "Arm Wrestle Simulator", "50 Wins", ""),
+    # Waste Time
+    ("Chapter3", "Waste Time", "Free Rewards", ""),
+    ("yesanothercode", "Waste Time", "Free Rewards", ""),
+    ("quick", "Waste Time", "12 Locks", ""),
+    ("StPatricks", "Waste Time", "Free Rewards", ""),
+    ("Central", "Waste Time", "Free Rewards", ""),
+    ("Valentines2", "Waste Time", "Free Rewards", ""),
+    ("QuestsHere", "Waste Time", "Free Rewards", ""),
+    ("imsorrylowk", "Waste Time", "Free Rewards", ""),
+    ("Valentines", "Waste Time", "Free Rewards", ""),
+    ("sorry3", "Waste Time", "Free Rewards", ""),
+    ("adminpanel", "Waste Time", "Free Rewards", ""),
+    ("wowowoowowowowowoowowowo", "Waste Time", "Free Rewards", ""),
+    ("Compensation", "Waste Time", "Free Rewards", ""),
+    ("cards", "Waste Time", "Free Rewards", ""),
+    ("sorryfornotfixingclansyet", "Waste Time", "Free Rewards", ""),
+    ("gullible", "Waste Time", "Free Rewards", ""),
+    ("sorryforbrokenclans", "Waste Time", "Free Rewards", ""),
+    ("10millionvisitswow", "Waste Time", "+10 Enchantments locks", ""),
+    ("20kccu", "Waste Time", "+2 Enchantments locks", ""),
+    ("holymoly", "Waste Time", "x1.25 highest reset stat", ""),
+    ("superduperhidden", "Waste Time", "+2 Enchantments rerolls", ""),
+    ("freererollsfr", "Waste Time", "+10 Enchantments rerolls", ""),
+    ("freelocksfr", "Waste Time", "+5 Enchantments locks", ""),
+    ("sorryforP2W", "Waste Time", "+50 Enchantments rerolls", ""),
+    ("yetanothercompensation", "Waste Time", "+20 Enchantments rerolls", ""),
+    ("imsosorry", "Waste Time", "+50k Button Clicks", ""),
+    ("freeclicks", "Waste Time", "+2k Button Clicks", ""),
+    ("wehavecodesnow", "Waste Time", "x2 Highest Reset Stat", ""),
+    ("moreclicksfr", "Waste Time", "+500 Other Button Clicks", ""),
+
+    # Tap Simulator
+    ("VALENTINES", "Tap Simulator", "1 Love Luck III Potion", ""),
+    ("SPEEDYTOTEM", "Tap Simulator", "2 Totems of Hatch Speed", ""),
+    ("LUCKYTOTEM", "Tap Simulator", "1 Totem of Luck", ""),
+    ("TELEPORT", "Tap Simulator", "2 Teleport Crystals", ""),
+    ("lucky", "Tap Simulator", "Luck Potion III", ""),
+    ("tacos", "Tap Simulator", "Taco Potion", ""),
+    ("russo", "Tap Simulator", "Five Tokens", ""),
+    ("enchant", "Tap Simulator", "Five Enchant Crystals", ""),
+
+    # Yeet a Friend
+    ("YEETOLYMPICS", "Yeet a Friend", "10K Stars", ""),
+    ("YAFTOBER", "Yeet a Friend", "Free Boosts", ""),
+    ("GRAFFITI", "Yeet a Friend", "Power Boost", ""),
+    ("GOTHICSCHOOL", "Yeet a Friend", "Energy, Luck, Power, Magnet and Rock Fuel Boosts", ""),
+    ("Camp", "Yeet a Friend", "2 Magnet10 Boost", ""),
+    ("Octopus", "Yeet a Friend", "Energy, Luck, Power, Magnet and Rock Fuel Boosts", ""),
+    ("BOMBARDINO", "Yeet a Friend", "Mythic Slime Pet", ""),
+    ("GYMSTAR", "Yeet a Friend", "7.77k Stars", ""),
+    ("SUPERCAR", "Yeet a Friend", "3 Wheel Spins", ""),
+    ("VALENTINE", "Yeet a Friend", "3 Energy Boosts, 3 Luck Boosts, 3 Power Boosts", ""),
+    ("OLYMP", "Yeet a Friend", "Mythic Slime Pet", ""),
+    ("IPLAYEVERYDAY", "Yeet a Friend", "Legendary Slime Pet", ""),
+    ("Junk", "Yeet a Friend", "Power Boost", ""),
+    ("Halloween", "Yeet a Friend", "50K Stars", ""),
+    ("XMAS24", "Yeet a Friend", "30K Stars", ""),
+    ("CHRISTMAS", "Yeet a Friend", "10k Stars", ""),
+    ("GIFTING", "Yeet a Friend", "5 Wheel Spins", ""),
+    ("Reap", "Yeet a Friend", "10k Stars", ""),
+    ("Aztec", "Yeet a Friend", "3 Wheel Spins", ""),
+    ("MAGIC", "Yeet a Friend", "x3 Energy Boost", ""),
+    ("AFK", "Yeet a Friend", "x2 Luck Boost", ""),
+    ("Glacier", "Yeet a Friend", "10k Stars", ""),
+    ("Enchanted", "Yeet a Friend", "5k Stars", ""),
+    ("Teleporter", "Yeet a Friend", "5k Stars", ""),
+    ("EASYEET", "Yeet a Friend", "Power Boost", ""),
+    ("DimensionBoost", "Yeet a Friend", "Energy Boost", ""),
+    ("Dimension", "Yeet a Friend", "Power Boost", ""),
+    ("Collector", "Yeet a Friend", "10k Stars", ""),
+    ("StarShopper", "Yeet a Friend", "5k Stars", ""),
+    ("YeetCartoon", "Yeet a Friend", "Power Boost", ""),
+    ("FreeStars", "Yeet a Friend", "750 Stars", ""),
+    ("FreePower", "Yeet a Friend", "Power Boost", ""),
+    ("iLoveYeeting", "Yeet a Friend", "Legendary Slime Pet", ""),
+
+    # Youtube Simulator Z
+    ("RUBY_Z", "Youtube Simulator Z", "Access to a room that rains Rubies", ""),
+    ("MONEYRAIN", "Youtube Simulator Z", "Access to a room that rains normal Money", ""),
+    ("TileZ", "Youtube Simulator Z", "Access to a room that rains Tiles", ""),
+    ("ICEmoneyRAIN", "Youtube Simulator Z", "Access to a room that rains Ice Money", ""),
+    ("Coinflip", "Youtube Simulator Z", "Flip for Normal Tokens (Requires 1 Rebirth)", ""),
+    ("CoinflipICE", "Youtube Simulator Z", "Flip for Ice Tokens (Requires Ice Room access)", ""),
+    ("Verified", "Youtube Simulator Z", "Verified badge next to your name", ""),
+    ("Challenges", "Youtube Simulator Z", "Reward bonuses", ""),
+    ("YTZ", "Youtube Simulator Z", "General reward", ""),
+
+    # Anime Vanguards
+    ("Chainsaws", "Anime Vanguards", "5000 Gems, 20 Rerolls, 20 Memoria Shards", ""),
+    ("1WeekDelay", "Anime Vanguards", "50 Rerolls, 50 Memoria Shards", ""),
+    ("NoCustoms", "Anime Vanguards", "10000 Gems, 30 Rerolls, 30 Memoria Shards", ""),
+    ("SorryForBugs", "Anime Vanguards", "Free Rewards", ""),
+    ("ALMOST100K", "Anime Vanguards", "100 Trait Rerolls, 100 Memoria Shards", ""),
+    ("Winter26", "Anime Vanguards", "Free Rewards", ""),
+    ("Memoria", "Anime Vanguards", "Free Rewards", ""),
+    ("ItsCold", "Anime Vanguards", "Free Rewards", ""),
+    ("FreedomsCallPart2", "Anime Vanguards", "5000 Gems, 50 Stat Chips", ""),
+    ("PinkVillainRaid", "Anime Vanguards", "50 Rerolls", ""),
+    ("FallEndsSoon", "Anime Vanguards", "50 Rerolls, 25000 Leaves", ""),
+    ("2026", "Anime Vanguards", "200 Rerolls (level 30 required)", ""),
+
+    # 99 Nights in the Forest
+    ("afterparty", "99 Nights in the Forest", "15 Gems", ""),
+    ("yay fishing", "99 Nights in the Forest", "2 Gems (type in chat while fishing)", ""),
+    ("DIAMONDS", "99 Nights in the Forest", "15 Gems", ""),
+
+    # Destroy Grandma
+    ("BETA", "Destroy Grandma", "15,000 Cash", ""),
+    ("YGDS!", "Destroy Grandma", "15,000 Cash", ""),
+    ("DESTROY", "Destroy Grandma", "2x XP and Mastery Boost for 15 minutes", ""),
+
+    # Bed Wars
+    ("Femboy-yuzi", "Bed Wars", "Kit", ""),
 ]
 
 
