@@ -26,7 +26,7 @@ ROBLOX_GAMES = [
     "Jailbreak", "Adopt Me!", "Murder Mystery 2", "Tower of Hell",
     "Brookhaven", "Royale High", "Doors", "Anime Adventures",
     "Sol's RNG", "Arcane Odyssey", "Muscle Legends", "Dragon Blox",
-    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Other"
+    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Other"
 ]
 
 PREMIUM_GAMES = [
@@ -506,6 +506,27 @@ PRELOADED_CODES = [
     ("GGTBONUS", "Mech Arena", "2x Rank 3 Javelin Rack 8", ""),
     ("BLASTZONE", "Mech Arena", "Rank 3 Guardian Mech, 200 A-Coins, 50k Credits, Prodigy Crate", ""),
     ("MIDGAMEMELEE", "Mech Arena", "2x Rank 4 Arc Torrent 6, 250 A-Coins, Amateur Crate", ""),
+    # Rivals
+    ("COMMUNITY22", "Rivals", "1 Community Wrap", ""),
+    ("FREE160", "Rivals", "3 Keys", ""),
+    ("COMMUNITY21", "Rivals", "1 Community Wrap", ""),
+    ("BONUS", "Rivals", "1 Key", ""),
+    ("BOOST", "Rivals", "1 Key", ""),
+    ("roblox_rtc", "Rivals", "5 Keys", ""),
+
+    # Evade
+    ("900", "Evade", "10 Points", ""),
+    ("901", "Evade", "12 Points", ""),
+    ("hdc_roblox", "Evade", "30 Points", ""),
+    ("halloween_23", "Evade", "23 Points", ""),
+    ("indebt", "Evade", "30 Points", ""),
+    ("indebt2", "Evade", "1000 Tokens", ""),
+    ("THANKSGIVING2025", "Evade", "15 Points", ""),
+    ("iloveevadewinterupdate", "Evade", "20 Points", ""),
+    ("HappyNewYears2026", "Evade", "26 Points", ""),
+
+    # Hypershot
+    ("100K", "Hypershot", "Free Present", ""),
 ]
 
 
