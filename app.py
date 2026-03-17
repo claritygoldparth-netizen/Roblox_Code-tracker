@@ -2,21 +2,21 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
 import os
 from datetime import datetime, date
- 
+
 app = Flask(__name__)
 app.secret_key = "robloxvault2026secretkey"
 if os.environ.get("RENDER"):
     DB = os.path.join("/tmp", "codes.db")
 else:
     DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), "codes.db")
- 
+
 # === ADD A NEW PASSWORD FOR EACH PERSON WHO PAYS ₹10 ===
 PREMIUM_PASSWORDS = [
     "PARTH001",   # Person 1 - test
     # "RIYA002",  # uncomment and add more as people pay
 ]
 # ========================================================
- 
+
 ROBLOX_GAMES = [
     "Blox Fruits", "Anime Card Clash", "Bubble Gum Simulator",
     "Basketball Zero", "Blue Lock: Rivals", "Pet Simulator X",
@@ -26,15 +26,15 @@ ROBLOX_GAMES = [
     "Jailbreak", "Adopt Me!", "Murder Mystery 2", "Tower of Hell",
     "Brookhaven", "Royale High", "Doors", "Anime Adventures",
     "Sol's RNG", "Arcane Odyssey", "Muscle Legends", "Dragon Blox",
-    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Driving Empire", "Other"
+    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Driving Empire", "Anime Infinity", "Basketball Legends", "Other"
 ]
- 
+
 PREMIUM_GAMES = [
     "Genshin Impact", "Honkai Star Rail", "Pokemon GO", "AFK Arena", "Mech Arena"
 ]
- 
+
 GAMES = ROBLOX_GAMES + PREMIUM_GAMES
- 
+
 PRELOADED_CODES = [
     # Blox Fruits
     ("LIGHTNINGABUSE", "Blox Fruits", "2x EXP for 20 minutes", ""),
@@ -61,7 +61,7 @@ PRELOADED_CODES = [
     ("TheGreatAce", "Blox Fruits", "2x EXP for 20 minutes", ""),
     ("Fudd10", "Blox Fruits", "Redeem for $1", ""),
     ("Sub2OfficialNoobie", "Blox Fruits", "2x EXP for 20 minutes", ""),
- 
+
     # Anime Card Clash
     ("3UPDATE6", "Anime Card Clash", "New update reward", ""),
     ("2UPDATE6", "Anime Card Clash", "New update reward", ""),
@@ -73,7 +73,7 @@ PRELOADED_CODES = [
     ("PREANNIVERSARY3", "Anime Card Clash", "Pre-anniversary reward", ""),
     ("PREANNIVERSARY2", "Anime Card Clash", "Pre-anniversary reward", ""),
     ("PREANNIVERSARY1", "Anime Card Clash", "Pre-anniversary reward", ""),
- 
+
     # Bubble Gum Simulator
     ("ogbgs", "Bubble Gum Simulator", "3x Infinity Elixir", ""),
     ("throwback", "Bubble Gum Simulator", "3x Eggs Elixir", ""),
@@ -103,21 +103,20 @@ PRELOADED_CODES = [
     ("Easter", "Bubble Gum Simulator", "4 Mystery Gifts", ""),
     ("Release", "Bubble Gum Simulator", "1 Mystery Gift", ""),
     ("Lucky", "Bubble Gum Simulator", "1 Luck Potion", ""),
- 
+
     # Basketball Zero
-    ("IMINYOURWALLS", "Basketball Zero", "50 Lucky Spins", ""),
-    ("LOOKBEHINDYOU", "Basketball Zero", "500,000 Money", ""),
-    ("DOMAINCLASH", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
-    ("CURSEKING", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
-    ("30CURSEKING", "Basketball Zero", "25 Lucky Spins, 100,000 Money", ""),
-    ("1HRCURSEKING", "Basketball Zero", "30 Lucky Spins, 150,000 Money", ""),
- 
+    ("CHROLLOVSTATLIS", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
+    ("30CHROLLOVSTATLIS", "Basketball Zero", "25 Lucky Spins, 100,000 Money", ""),
+    ("1HRCHROLLOVSTATLIS", "Basketball Zero", "30 Lucky Spins, 150,000 Money", ""),
+    ("EXTRASPINS", "Basketball Zero", "Lucky Spins", ""),
+    ("IMINYOURWALLS", "Basketball Zero", "Lucky Spins", ""),
+
     # Blue Lock: Rivals
     ("NELSORRY", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
     ("RIPGENERATIONAL", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
     ("ISAGIEVOLUTION", "Blue Lock: Rivals", "5 Lucky Style Spins", ""),
     ("NAGIEVOLUTION", "Blue Lock: Rivals", "5 Lucky Flow Spins", ""),
- 
+
     # Shindo Life
     ("RELLGIFTsc!", "Shindo Life", "Gift reward", ""),
     ("RELLGIFTbag!", "Shindo Life", "Gift reward", ""),
@@ -185,7 +184,7 @@ PRELOADED_CODES = [
     ("RELLNindonSeas!", "Shindo Life", "Bonus reward", ""),
     ("BigManTingsTesting!", "Shindo Life", "Bonus reward", ""),
     ("NoMoremessingOnlyGrinding!", "Shindo Life", "Bonus reward", ""),
- 
+
     # Anime Defenders
     ("merrychristmas", "Anime Defenders", "1000x Snowflakes", ""),
     ("hollydefenders", "Anime Defenders", "1 Exclusive Wish", ""),
@@ -200,7 +199,7 @@ PRELOADED_CODES = [
     ("sub2jonaslyz", "Anime Defenders", "50 Gems", ""),
     ("sub2riktime", "Anime Defenders", "50 Gems", ""),
     ("sub2nagblox", "Anime Defenders", "50 Gems", ""),
- 
+
     # Grand Piece Online
     ("CupidQueenEXP", "Grand Piece Online", "2x EXP boost", ""),
     ("CupidQueenDrops", "Grand Piece Online", "2x Drop boost", ""),
@@ -230,7 +229,7 @@ PRELOADED_CODES = [
     ("PHOGIVING20252XDROPS", "Grand Piece Online", "2x Drop boost", ""),
     ("HALLOWEENPART32XEXP", "Grand Piece Online", "2x EXP boost", ""),
     ("1MILLIONLIKES2XEXP", "Grand Piece Online", "2x EXP boost", ""),
- 
+
     # King Legacy
     ("FreePterSpin", "King Legacy", "10x Copper Key", ""),
     ("SKGames", "King Legacy", "2x EXP for 30 minutes", ""),
@@ -242,7 +241,7 @@ PRELOADED_CODES = [
     ("2MFAV", "King Legacy", "Free Stat Refund", ""),
     ("Peodiz", "King Legacy", "100k Cash", ""),
     ("DinoxLive", "King Legacy", "100k Cash", ""),
- 
+
     # Fisch
     ("SeventhOfMarch!", "Fisch", "Frigid Beauty Rod Skin", ""),
     ("JungleExpansion", "Fisch", "500 Coins, 5x Thorn Cluster, Random Item", ""),
@@ -255,15 +254,15 @@ PRELOADED_CODES = [
     ("scarlet", "Fisch", "Scarlet skin for Nate's Blade", ""),
     ("TemporarySubmarine", "Fisch", "Submarine parts", ""),
     ("CARBON", "Fisch", "Free Carbon bobber", ""),
- 
+
     # Fruit Battlegrounds
     ("ITSTHEBILLION!", "Fruit Battlegrounds", "600 Gems", ""),
     ("CODEFIX", "Fruit Battlegrounds", "Title", ""),
- 
+
     # AUT
     ("GAROU", "AUT (A Universal Time)", "Reward", ""),
     ("BEOWULF", "AUT (A Universal Time)", "Reward", ""),
- 
+
     # Peroxide
     ("ValentinesDay", "Peroxide", "50 Product Essence", ""),
     ("TheFirstDayOfWinter", "Peroxide", "50 Product Essence", ""),
@@ -272,12 +271,12 @@ PRELOADED_CODES = [
     ("MayIngusRest", "Peroxide", "10 Product Essence and Dullahan Accessory", ""),
     ("TheEvilHalloweenDuper", "Peroxide", "50 Product Essence", ""),
     ("YayAHalloweenUpdate", "Peroxide", "10 Halloween Candy and 20 Product Essence", ""),
- 
+
     # Jailbreak
     ("1bluebird", "Jailbreak", "25,000 Cash (1 hour limit)", ""),
     ("YoutubeHelloItsVG", "Jailbreak", "HelloItsVG Tire Sticker", ""),
     ("YoutubeNoobFreak", "Jailbreak", "NoobFreak Tire Sticker", ""),
- 
+
     # Brookhaven
     ("1836448915", "Brookhaven", "Music: Irish Flute 30", ""),
     ("5776344796", "Brookhaven", "Music: Jujutsu Kaisen OP - Eve", ""),
@@ -349,10 +348,10 @@ PRELOADED_CODES = [
     ("5253604010", "Brookhaven", "Music: Capone - Oh No", ""),
     ("5937000690", "Brookhaven", "Music: Chikatto - Chika Chika", ""),
     ("154664102", "Brookhaven", "Music: You've Been Trolled", ""),
- 
+
     # Royale High
     ("SmythsChandelier2024", "Royale High", "Exclusive reward", ""),
- 
+
     # Doors
     ("SCREECHSUCKS", "Doors", "25 Knobs", ""),
     ("CRUSADERS", "Doors", "5 Stardust", ""),
@@ -364,11 +363,11 @@ PRELOADED_CODES = [
     ("PATHSWAP", "Doors", "1 Stardust", ""),
     ("JUMP OVER THE BRICK", "Doors", "1 Stardust", ""),
     ("VOCAB HAVOC", "Doors", "1 Stardust", ""),
- 
+
     # Sol's RNG
     ("RaidCH2", "Sol's RNG", "3 Red Potion and 1 Red Moon Potion", ""),
     ("UPD20260228", "Sol's RNG", "20 Potion Chests and 5 Rare Potion Chests", ""),
- 
+
     # Muscle Legends
     ("mightygems2500", "Muscle Legends", "2,500 Gems", ""),
     ("ultimate250", "Muscle Legends", "250 Strength", ""),
@@ -384,7 +383,7 @@ PRELOADED_CODES = [
     ("supermuscle100", "Muscle Legends", "200 Strength", ""),
     ("superpunch100", "Muscle Legends", "100 Strength", ""),
     ("launch250", "Muscle Legends", "250 Gems", ""),
- 
+
     # Dragon Blox
     ("VALENTINE", "Dragon Blox", "5 Premium Wishes", ""),
     ("WHENUPDATE", "Dragon Blox", "10 Premium Wishes", ""),
@@ -398,7 +397,7 @@ PRELOADED_CODES = [
     ("HAPPYNEWYEAR", "Dragon Blox", "5 Premium Wishes", ""),
     ("HAPPYHOLIDAYS25", "Dragon Blox", "5 Premium Wishes", ""),
     ("XMAS2025", "Dragon Blox", "10 Premium Wishes", ""),
- 
+
     # Ninja Legends
     ("soulhunter5", "Ninja Legends", "5 Souls", ""),
     ("chaosblade1000", "Ninja Legends", "1K Chi", ""),
@@ -434,21 +433,21 @@ PRELOADED_CODES = [
     ("fastninja100", "Ninja Legends", "100 Chi", ""),
     ("epicninja250", "Ninja Legends", "250 Chi", ""),
     ("masterninja750", "Ninja Legends", "1K Chi", ""),
- 
+
     # Volleyball Legends
     ("UPDATE_60", "Volleyball Legends", "5 Lucky Style Spins", ""),
     ("KIJO", "Volleyball Legends", "5 Lucky Style Spins", ""),
     ("SUPER_TILTS", "Volleyball Legends", "5 Lucky Ability Spins", ""),
- 
+
     # === PREMIUM GAMES (password protected) ===
- 
+
     # Genshin Impact
     ("ZECVVP1DT7Z2", "Genshin Impact", "10k Mora, 10 Adventurer's Experience, 5 Fine Enhancement Ore", ""),
     ("8BHA0KFRG94K", "Genshin Impact", "60 Primogems, 5 Adventurer's Experience", ""),
     ("8X73KH58KDHN", "Genshin Impact", "60 Primogems, 5 Adventurer's Experience", ""),
     ("GENSHINGIFT", "Genshin Impact", "50 Primogems, 3 Hero's Wit (works periodically)", ""),
     ("LTT3DVKVLUQZ", "Genshin Impact", "30 Primogems, 20k Mora, 3 Broken Drive Shafts", ""),
- 
+
     # Honkai Star Rail
     ("7T3R83MMMTY3", "Honkai Star Rail", "Stellar Jade x100, Refined Aether x4", ""),
     ("CSJ882LL4BHF", "Honkai Star Rail", "Stellar Jade x100, Traveler's Guide x5", ""),
@@ -466,14 +465,14 @@ PRELOADED_CODES = [
     ("FAREWELL", "Honkai Star Rail", "Stellar Jade x60, Fuel x1", ""),
     ("IFYOUAREREADINGTHIS", "Honkai Star Rail", "Stellar Jade x60, Fuel x1", ""),
     ("STARRAILGIFT", "Honkai Star Rail", "Stellar Jade x100, Traveler's Guide x4, Bottled Soda x5, Credit x50,000", ""),
- 
+
     # Pokemon GO
     ("FENDIxFRGMTxPOKEMON", "Pokemon GO", "FENDI x FRGMT x Pokemon Hoodie", ""),
     ("TH4NKY0UF41RYMUCH", "Pokemon GO", "Very Fairy Timed Research Quest", ""),
     ("QFWM3SRJPVRY5", "Pokemon GO", "Unown X Bonus Timed Research Quest", ""),
     ("6K343X373BDQM", "Pokemon GO", "Unown Y Bonus Timed Research Quest", ""),
     ("2PKXPAT2RJXKL", "Pokemon GO", "Unown Z and A Bonus Timed Research Quest", ""),
- 
+
     # AFK Arena
     ("2bxn4k86qd", "AFK Arena", "3x 8h Dust, 3x 8h Gold, 3x 8h EXP, 1000 Diamonds", ""),
     ("2bfe265g6x", "AFK Arena", "3x 8h Dust, 3x 8h Gold, 3x 8h EXP, 1000 Diamonds", ""),
@@ -513,7 +512,7 @@ PRELOADED_CODES = [
     ("BONUS", "Rivals", "1 Key", ""),
     ("BOOST", "Rivals", "1 Key", ""),
     ("roblox_rtc", "Rivals", "5 Keys", ""),
- 
+
     # Evade
     ("900", "Evade", "10 Points", ""),
     ("901", "Evade", "12 Points", ""),
@@ -524,7 +523,7 @@ PRELOADED_CODES = [
     ("THANKSGIVING2025", "Evade", "15 Points", ""),
     ("iloveevadewinterupdate", "Evade", "20 Points", ""),
     ("HappyNewYears2026", "Evade", "26 Points", ""),
- 
+
     # Hypershot
     ("100K", "Hypershot", "Free Present", ""),
     # Arm Wrestle Simulator
@@ -635,7 +634,7 @@ PRELOADED_CODES = [
     ("freeclicks", "Waste Time", "+2k Button Clicks", ""),
     ("wehavecodesnow", "Waste Time", "x2 Highest Reset Stat", ""),
     ("moreclicksfr", "Waste Time", "+500 Other Button Clicks", ""),
- 
+
     # Tap Simulator
     ("VALENTINES", "Tap Simulator", "1 Love Luck III Potion", ""),
     ("SPEEDYTOTEM", "Tap Simulator", "2 Totems of Hatch Speed", ""),
@@ -645,7 +644,7 @@ PRELOADED_CODES = [
     ("tacos", "Tap Simulator", "Taco Potion", ""),
     ("russo", "Tap Simulator", "Five Tokens", ""),
     ("enchant", "Tap Simulator", "Five Enchant Crystals", ""),
- 
+
     # Yeet a Friend
     ("YEETOLYMPICS", "Yeet a Friend", "10K Stars", ""),
     ("YAFTOBER", "Yeet a Friend", "Free Boosts", ""),
@@ -680,7 +679,7 @@ PRELOADED_CODES = [
     ("FreeStars", "Yeet a Friend", "750 Stars", ""),
     ("FreePower", "Yeet a Friend", "Power Boost", ""),
     ("iLoveYeeting", "Yeet a Friend", "Legendary Slime Pet", ""),
- 
+
     # Youtube Simulator Z
     ("RUBY_Z", "Youtube Simulator Z", "Access to a room that rains Rubies", ""),
     ("MONEYRAIN", "Youtube Simulator Z", "Access to a room that rains normal Money", ""),
@@ -691,7 +690,7 @@ PRELOADED_CODES = [
     ("Verified", "Youtube Simulator Z", "Verified badge next to your name", ""),
     ("Challenges", "Youtube Simulator Z", "Reward bonuses", ""),
     ("YTZ", "Youtube Simulator Z", "General reward", ""),
- 
+
     # Anime Vanguards
     ("Chainsaws", "Anime Vanguards", "5000 Gems, 20 Rerolls, 20 Memoria Shards", ""),
     ("1WeekDelay", "Anime Vanguards", "50 Rerolls, 50 Memoria Shards", ""),
@@ -705,17 +704,17 @@ PRELOADED_CODES = [
     ("PinkVillainRaid", "Anime Vanguards", "50 Rerolls", ""),
     ("FallEndsSoon", "Anime Vanguards", "50 Rerolls, 25000 Leaves", ""),
     ("2026", "Anime Vanguards", "200 Rerolls (level 30 required)", ""),
- 
+
     # 99 Nights in the Forest
     ("afterparty", "99 Nights in the Forest", "15 Gems", ""),
     ("yay fishing", "99 Nights in the Forest", "2 Gems (type in chat while fishing)", ""),
     ("DIAMONDS", "99 Nights in the Forest", "15 Gems", ""),
- 
+
     # Destroy Grandma
     ("BETA", "Destroy Grandma", "15,000 Cash", ""),
     ("YGDS!", "Destroy Grandma", "15,000 Cash", ""),
     ("DESTROY", "Destroy Grandma", "2x XP and Mastery Boost for 15 minutes", ""),
- 
+
     # Bed Wars
     ("Femboy-yuzi", "Bed Wars", "Kit", ""),
     # Driving Empire
@@ -736,15 +735,43 @@ PRELOADED_CODES = [
     ("200KMEMBERS", "Driving Empire", "50,000 Cash", ""),
     ("NEWYEAR2025", "Driving Empire", "75,000 Cash", ""),
     ("ZOOM", "Driving Empire", "2023 Fairway Zoomer", ""),
+    # Anime Infinity
+    ("9KFavs!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("MBShutdown!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("Update3!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("NewGamemode!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("Fusion!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("YOSHAA!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("DelayInfinity!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+
+    # Basketball Legends
+    ("500KFAVS", "Basketball Legends", "Free Rewards", ""),
+    ("TURKEY25", "Basketball Legends", "1x Halloween Skin Case (FL) or 1x Halloween Effect Case (BL)", ""),
+    ("CLANS", "Basketball Legends", "1x Halloween Case", ""),
+    ("DELAYED", "Basketball Legends", "1x Halloween Skin Case", ""),
+    ("SUPERSPOOKY", "Basketball Legends", "1x Halloween Case", ""),
+    ("SUPERSCARY", "Basketball Legends", "1x Halloween Skin Case", ""),
+    ("JAMALCHOCOLATEPUDDING", "Basketball Legends", "1x Effect Crate", ""),
+    ("JAMALBANANAPUDDING", "Basketball Legends", "1x Skin Crate", ""),
+    ("banana", "Basketball Legends", "1x Elite Crate", ""),
+    ("MAGICAL", "Basketball Legends", "1x Elite Crate", ""),
+    ("SUMMER25", "Basketball Legends", "1x Summer25 Effect Crate", ""),
+    ("DELAYCASE", "Basketball Legends", "1x Summer25 Effect Crate", ""),
+    ("DELAYSKIN", "Basketball Legends", "1x Summer25 Skin Crate", ""),
+    ("ANIMEBOSSRAID", "Basketball Legends", "10K Coins", ""),
+    ("325KLIKES", "Basketball Legends", "5K Coins", ""),
+    ("320KLIKES", "Basketball Legends", "5K Coins", ""),
+    ("310KLIKES", "Basketball Legends", "5K Coins", ""),
+    ("COINBOOST", "Basketball Legends", "2x Coin Boost for 30 minutes", ""),
 ]
- 
- 
+
+
 def get_db():
     conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     return conn
- 
- 
+
+
 def init_db():
     with get_db() as db:
         db.execute("""
@@ -767,8 +794,8 @@ def init_db():
                     (code, game, desc, exp)
                 )
             db.commit()
- 
- 
+
+
 def expiry_info(exp_str):
     if not exp_str:
         return None, None
@@ -783,12 +810,12 @@ def expiry_info(exp_str):
             return exp.strftime("%d %b"), "ok"
     except Exception:
         return None, None
- 
- 
+
+
 def is_premium_unlocked():
     return session.get("premium") == True
- 
- 
+
+
 @app.route("/unlock", methods=["GET", "POST"])
 def unlock():
     error = None
@@ -800,31 +827,31 @@ def unlock():
         else:
             error = "Wrong password! Contact Parth to get access."
     return render_template("unlock.html", error=error)
- 
- 
+
+
 @app.route("/lock")
 def lock():
     session.pop("premium", None)
     return redirect(url_for("index"))
- 
- 
+
+
 @app.route("/")
 def index():
     search = request.args.get("q", "").strip()
     filter_game = request.args.get("game", "")
     filter_status = request.args.get("status", "")
     premium = is_premium_unlocked()
- 
+
     db = get_db()
     query = "SELECT * FROM codes WHERE 1=1"
     params = []
- 
+
     # Hide premium games if not unlocked
     if not premium:
         placeholders = ",".join("?" for _ in PREMIUM_GAMES)
         query += f" AND game NOT IN ({placeholders})"
         params += PREMIUM_GAMES
- 
+
     if search:
         query += " AND (UPPER(code) LIKE UPPER(?) OR LOWER(game) LIKE LOWER(?) OR LOWER(desc) LIKE LOWER(?))"
         params += [f"%{search}%", f"%{search}%", f"%{search}%"]
@@ -835,16 +862,16 @@ def index():
         query += " AND used = 0"
     elif filter_status == "used":
         query += " AND used = 1"
- 
+
     query += " ORDER BY added_at DESC"
     codes = db.execute(query, params).fetchall()
     codes = [dict(c) for c in codes]
- 
+
     for c in codes:
         lbl, cls = expiry_info(c["exp"])
         c["exp_label"] = lbl
         c["exp_cls"] = cls
- 
+
     all_games_query = "SELECT DISTINCT game FROM codes"
     if not premium:
         placeholders = ",".join("?" for _ in PREMIUM_GAMES)
@@ -852,47 +879,47 @@ def index():
         all_games = [r["game"] for r in db.execute(all_games_query, PREMIUM_GAMES).fetchall()]
     else:
         all_games = [r["game"] for r in db.execute(all_games_query).fetchall()]
- 
+
     total = len(codes)
     unused = sum(1 for c in codes if not c["used"])
- 
+
     soon_count = 0
     for row in db.execute("SELECT exp FROM codes WHERE exp != '' AND exp IS NOT NULL").fetchall():
         _, cls = expiry_info(row["exp"])
         if cls == "soon":
             soon_count += 1
- 
+
     return render_template("index.html",
         codes=codes, games=ROBLOX_GAMES, all_games=all_games,
         search=search, filter_game=filter_game, filter_status=filter_status,
         total=total, unused=unused, soon=soon_count,
         premium=premium, premium_games=PREMIUM_GAMES)
- 
- 
+
+
 @app.route("/add", methods=["POST"])
 def add_code():
     code = request.form.get("code", "").strip().upper()
     game = request.form.get("game", "").strip()
     desc = request.form.get("desc", "").strip()
     exp = request.form.get("exp", "").strip()
- 
+
     if not code or not game:
         return redirect(url_for("index"))
- 
+
     if exp:
         try:
             datetime.strptime(exp, "%Y-%m-%d")
         except ValueError:
             exp = ""
- 
+
     with get_db() as db:
         db.execute("INSERT INTO codes (code, game, desc, exp) VALUES (?, ?, ?, ?)",
                    (code, game, desc, exp))
         db.commit()
- 
+
     return redirect(url_for("index"))
- 
- 
+
+
 @app.route("/toggle/<int:code_id>", methods=["POST"])
 def toggle_used(code_id):
     with get_db() as db:
@@ -902,18 +929,18 @@ def toggle_used(code_id):
                        (0 if current["used"] else 1, code_id))
             db.commit()
     return redirect(request.referrer or url_for("index"))
- 
- 
+
+
 @app.route("/delete/<int:code_id>", methods=["POST"])
 def delete_code(code_id):
     with get_db() as db:
         db.execute("DELETE FROM codes WHERE id=?", (code_id,))
         db.commit()
     return redirect(request.referrer or url_for("index"))
- 
- 
+
+
 init_db()
- 
+
 if __name__ == "__main__":
     print("\n🎮 Roblox Code Vault is running!")
     print("Open this in your browser: http://localhost:5000")
