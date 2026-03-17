@@ -26,7 +26,7 @@ ROBLOX_GAMES = [
     "Jailbreak", "Adopt Me!", "Murder Mystery 2", "Tower of Hell",
     "Brookhaven", "Royale High", "Doors", "Anime Adventures",
     "Sol's RNG", "Arcane Odyssey", "Muscle Legends", "Dragon Blox",
-    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Driving Empire", "Anime Infinity", "Basketball Legends", "Other"
+    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Driving Empire", "Anime Infinity", "Basketball Legends", "Deathball", "Other"
 ]
 
 PREMIUM_GAMES = [
@@ -763,6 +763,26 @@ PRELOADED_CODES = [
     ("320KLIKES", "Basketball Legends", "5K Coins", ""),
     ("310KLIKES", "Basketball Legends", "5K Coins", ""),
     ("COINBOOST", "Basketball Legends", "2x Coin Boost for 30 minutes", ""),
+    # Deathball
+    ("KSTELLAR", "Deathball", "25,000 Gems", ""),
+    ("SUPERNOVANOW", "Deathball", "25,000 Gems", ""),
+    ("SUPERNOVASOON", "Deathball", "25,000 Gems", ""),
+    ("DRAGONQUEST", "Deathball", "25,000 Gems", ""),
+    ("XMASUPD3", "Deathball", "25,000 Gems", ""),
+    ("SANTASOON", "Deathball", "25,000 Gems", ""),
+    ("XMASUPD2", "Deathball", "500 Crystals", ""),
+    ("CHRISTMAS", "Deathball", "25,000 Gems", ""),
+    ("XMASUPD1", "Deathball", "500 Crystals", ""),
+    ("25KCCUTHNX", "Deathball", "25,000 Gems", ""),
+    ("GREENMAN", "Deathball", "500 Crystals", ""),
+    ("WINGS", "Deathball", "25,000 Gems", ""),
+    ("BANNERSOON", "Deathball", "25,000 Gems", ""),
+    ("DOCSTONE", "Deathball", "25,000 Gems", ""),
+    ("CHAMPSOON", "Deathball", "25,000 Gems", ""),
+    ("DBTIME", "Deathball", "15,000 Gems", ""),
+    ("FREEGEMS", "Deathball", "500 Crystals", ""),
+    ("GHOSTMODE", "Deathball", "500 Crystals", ""),
+    ("DRPLAGUE", "Deathball", "500 Crystals", ""),
 ]
 
 
