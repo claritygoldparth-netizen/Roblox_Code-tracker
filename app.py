@@ -945,10 +945,13 @@ def toggle_used(code_id):
     with get_db() as db:
         current = db.execute("SELECT used FROM codes WHERE id=?", (code_id,)).fetchone()
         if current:
-            db.execute("UPDATE codes SET used=? WHERE id=?",
-                       (0 if current["used"] else 1, code_id))
+            new_val = 0 if current["used"] else 1
+            db.execute("UPDATE codes SET used=? WHERE id=?", (new_val, code_id))
             db.commit()
-    return redirect(request.referrer or url_for("index"))
+            from flask import jsonify
+            return jsonify({"success": True, "used": new_val})
+    from flask import jsonify
+    return jsonify({"success": False}), 404
 
 
 @app.route("/delete/<int:code_id>", methods=["POST"])
