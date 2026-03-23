@@ -74,48 +74,28 @@ PRELOADED_CODES = [
     ("PREANNIVERSARY2", "Anime Card Clash", "Pre-anniversary reward", ""),
     ("PREANNIVERSARY1", "Anime Card Clash", "Pre-anniversary reward", ""),
 
+
     # Bubble Gum Simulator
-    ("ogbgs", "Bubble Gum Simulator", "3x Infinity Elixir", ""),
-    ("throwback", "Bubble Gum Simulator", "3x Eggs Elixir", ""),
-    ("halloween", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("obby", "Bubble Gum Simulator", "Obby keys and crates", ""),
-    ("milestones", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("season7", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("update18", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("update17", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("update16", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("onemorebonus", "Bubble Gum Simulator", "1 of each Infinity Potion and 5 Secret Elixir", ""),
-    ("update15", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("world3", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("fishe", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
-    ("update13", "Bubble Gum Simulator", "12x Infinity Elixir", ""),
-    ("update12", "Bubble Gum Simulator", "12x Infinity Elixir", ""),
-    ("update11", "Bubble Gum Simulator", "10x Infinity Elixir", ""),
-    ("update10", "Bubble Gum Simulator", "12x Infinity Elixir", ""),
-    ("update9", "Bubble Gum Simulator", "3x Light Box, 3x Egg Elixir, 5x Mythic Evolved", ""),
-    ("update8", "Bubble Gum Simulator", "3x Infinity Elixir", ""),
-    ("update6", "Bubble Gum Simulator", "2x Infinity Elixir and 3x Ancient Token", ""),
-    ("update5", "Bubble Gum Simulator", "2x Infinity Elixir", ""),
-    ("update4", "Bubble Gum Simulator", "2x Infinity Elixir and 5x Mystery Box", ""),
-    ("sylentlyssorry", "Bubble Gum Simulator", "3x Infinity Elixir, 1x Giant Dice, 1x Golden Dice", ""),
-    ("update3", "Bubble Gum Simulator", "2x Dice and 2x Giant Dice", ""),
-    ("update2", "Bubble Gum Simulator", "5 Mystery Gifts", ""),
-    ("Easter", "Bubble Gum Simulator", "4 Mystery Gifts", ""),
-    ("Release", "Bubble Gum Simulator", "1 Mystery Gift", ""),
-    ("Lucky", "Bubble Gum Simulator", "1 Luck Potion", ""),
+    ("flowers", "Bubble Gum Simulator", "Secret Elixirs", ""),
+    ("spring", "Bubble Gum Simulator", "Egg Elixirs", ""),
+    ("world3", "Bubble Gum Simulator", "Secret Elixir and Lucky Infinity", ""),
+    ("update18", "Bubble Gum Simulator", "Infinity Elixirs", ""),
+    ("update17", "Bubble Gum Simulator", "Infinity Elixirs", ""),
+    ("update16", "Bubble Gum Simulator", "Secret Elixir and Lucky Infinity", ""),
+    ("update15", "Bubble Gum Simulator", "Lucky Elixir and Lucky Infinity", ""),
+
 
     # Basketball Zero
-    ("CHROLLOVSTATLIS", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
-    ("30CHROLLOVSTATLIS", "Basketball Zero", "25 Lucky Spins, 100,000 Money", ""),
-    ("1HRCHROLLOVSTATLIS", "Basketball Zero", "30 Lucky Spins, 150,000 Money", ""),
-    ("EXTRASPINS", "Basketball Zero", "Lucky Spins", ""),
-    ("IMINYOURWALLS", "Basketball Zero", "Lucky Spins", ""),
+    ("JUDGEMENT", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
+    ("30JUDGEMENT", "Basketball Zero", "25 Lucky Spins, 100,000 Money", ""),
+    ("1HRJUDGEMENT", "Basketball Zero", "30 Lucky Spins, 150,000 Money", ""),
+
 
     # Blue Lock: Rivals
-    ("NELSORRY", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
-    ("RIPGENERATIONAL", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
-    ("ISAGIEVOLUTION", "Blue Lock: Rivals", "5 Lucky Style Spins", ""),
-    ("NAGIEVOLUTION", "Blue Lock: Rivals", "5 Lucky Flow Spins", ""),
+    ("NELSTYLESPINS", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
+    ("NELLUCKY", "Blue Lock: Rivals", "10 Lucky Flow Spins", ""),
+    ("NELPASS", "Blue Lock: Rivals", "300 Ego Tokens", ""),
+
 
     # Shindo Life
     ("RELLGIFTsc!", "Shindo Life", "Gift reward", ""),
@@ -230,11 +210,14 @@ PRELOADED_CODES = [
     ("HALLOWEENPART32XEXP", "Grand Piece Online", "2x EXP boost", ""),
     ("1MILLIONLIKES2XEXP", "Grand Piece Online", "2x EXP boost", ""),
 
+
     # King Legacy
+    ("FIXEDBUG1003", "King Legacy", "3x Gold Keys", ""),
+    ("Serpent10", "King Legacy", "10x Gems", ""),
     ("FreePterSpin", "King Legacy", "10x Copper Key", ""),
-    ("SKGames", "King Legacy", "2x EXP for 30 minutes", ""),
+    ("SKGames", "King Legacy", "2x EXP for 30 minutes (join Sea King Games group)", ""),
     ("RainbowDragon", "King Legacy", "100 Gems", ""),
-    ("DragonColorRefund", "King Legacy", "50 Gems", ""),
+    ("DragonColorRefund", "King Legacy", "50 Gems (or 10 if original red color)", ""),
     ("WELCOMETOKINGLEGACY", "King Legacy", "2x EXP for 30 minutes", ""),
     ("<3LEEPUNGG", "King Legacy", "2x EXP for 30 minutes", ""),
     ("FREESTATSRESET", "King Legacy", "Free Stat Refund", ""),
@@ -242,28 +225,34 @@ PRELOADED_CODES = [
     ("Peodiz", "King Legacy", "100k Cash", ""),
     ("DinoxLive", "King Legacy", "100k Cash", ""),
 
+
     # Fisch
+    ("FischNewIslandSoon", "Fisch", "1000 Coins, Monochrome Pitchfork rod skin, 5x Starlight Worm, Random Totem", ""),
+    ("StPatricks", "Fisch", "314 Coins, 5x Clover Cluster, Demon-Slayer rod, Clover Rod, Rainbow Totem", ""),
     ("SeventhOfMarch!", "Fisch", "Frigid Beauty Rod Skin", ""),
     ("JungleExpansion", "Fisch", "500 Coins, 5x Thorn Cluster, Random Item", ""),
-    ("JungleExpansionSOON", "Fisch", "1111 Coins, Forestwing Rod Skin, 5x Thorn Cluster", ""),
+    ("JungleExpansionSOON", "Fisch", "1111 Coins, Forestwing Rod Skin, 5x Thorn Cluster, Colossal Dragon Hunt Totem", ""),
     ("JOUNCE", "Fisch", "Chroma Blade of Glorp Skin", ""),
     ("BIGGLE", "Fisch", "1x Garbage", ""),
-    ("Brinestorm", "Fisch", "Flamemourner Rod skin", ""),
+    ("Brinestorm", "Fisch", "Flamemourner Rod skin for Tidemourner Rod", ""),
     ("Tidefall", "Fisch", "Tiny Fabulous Rod skin and Random Hunt Totem", ""),
     ("Astraeus", "Fisch", "Shadow Pole Rod skin for the North Pole rod", ""),
     ("scarlet", "Fisch", "Scarlet skin for Nate's Blade", ""),
     ("TemporarySubmarine", "Fisch", "Submarine parts", ""),
     ("CARBON", "Fisch", "Free Carbon bobber", ""),
 
+
     # Fruit Battlegrounds
     ("ITSTHEBILLION!", "Fruit Battlegrounds", "600 Gems", ""),
     ("CODEFIX", "Fruit Battlegrounds", "Title", ""),
+
 
     # AUT
     ("GAROU", "AUT (A Universal Time)", "Reward", ""),
     ("BEOWULF", "AUT (A Universal Time)", "Reward", ""),
 
     # Peroxide
+    ("435kLikes", "Peroxide", "25 Product Essence and 2000 Yen", ""),
     ("ValentinesDay", "Peroxide", "50 Product Essence", ""),
     ("TheFirstDayOfWinter", "Peroxide", "50 Product Essence", ""),
     ("EvilWarlordTriumph", "Peroxide", "30 Product Essence", ""),
@@ -273,9 +262,13 @@ PRELOADED_CODES = [
     ("YayAHalloweenUpdate", "Peroxide", "10 Halloween Candy and 20 Product Essence", ""),
 
     # Jailbreak
-    ("1bluebird", "Jailbreak", "25,000 Cash (1 hour limit)", ""),
+    ("rich100rich", "Jailbreak", "100,000 Cash (Limit 5)", ""),
+    ("25pass50", "Jailbreak", "Free Season Pass (Limit 50)", ""),
+    ("20KCASH4U", "Jailbreak", "20,000 Cash", ""),
+    ("BigMac8241", "Jailbreak", "555 Cash", ""),
     ("YoutubeHelloItsVG", "Jailbreak", "HelloItsVG Tire Sticker", ""),
     ("YoutubeNoobFreak", "Jailbreak", "NoobFreak Tire Sticker", ""),
+
 
     # Brookhaven
     ("1836448915", "Brookhaven", "Music: Irish Flute 30", ""),
@@ -353,20 +346,46 @@ PRELOADED_CODES = [
     ("SmythsChandelier2024", "Royale High", "Exclusive reward", ""),
 
     # Doors
-    ("SCREECHSUCKS", "Doors", "25 Knobs", ""),
-    ("CRUSADERS", "Doors", "5 Stardust", ""),
-    ("KUBZ SCOUTS", "Doors", "5 Knobs", ""),
-    ("LORE", "Doors", "5 Knobs", ""),
-    ("PENGUINZ0", "Doors", "5 Knobs", ""),
-    ("CHEDDAR BALLS", "Doors", "1 Knob", ""),
+    ("GRACE", "Doors", "1 Knob", ""),
+    ("FE4R_RBX", "Doors", "5 Knobs", ""),
+    ("PRESSURE", "Doors", "No reward", ""),
+    ("L", "Doors", "No Reward", ""),
+    ("/E FREE", "Doors", "1 Knob", ""),
+    ("777", "Doors", "777 Knobs, 7 Stardust, 1 Revive", ""),
     ("RAGDOLL COMBAT", "Doors", "1 Stardust", ""),
-    ("PATHSWAP", "Doors", "1 Stardust", ""),
+    ("LAZYDEVS", "Doors", "50 Knobs", ""),
+    ("3rd", "Doors", "33 Knobs", ""),
+    ("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Doors", "5 Knobs", ""),
+    ("RAGDOLL MAYHEM", "Doors", "5 Knobs", ""),
+    ("RAGDOLL UNIVERSE", "Doors", "5 Knobs", ""),
+    ("LORE", "Doors", "5 Knobs", ""),
+    ("FIND THE TROLLFACES", "Doors", "5 Knobs", ""),
     ("JUMP OVER THE BRICK", "Doors", "1 Stardust", ""),
+    ("PATHSWAP", "Doors", "1 Stardust", ""),
     ("VOCAB HAVOC", "Doors", "1 Stardust", ""),
+    ("8BITRYAM", "Doors", "5 Knobs", ""),
+    ("ISHOWSPEED", "Doors", "5 Knobs", ""),
+    ("BIJUU MIKE", "Doors", "5 Knobs", ""),
+    ("DANTDM", "Doors", "5 Knobs", ""),
+    ("KUBZ SCOUTS", "Doors", "5 Knobs", ""),
+    ("KREEKCRAFT", "Doors", "5 Knobs", ""),
+    ("PENGUINZ0", "Doors", "5 Knobs", ""),
+    ("THINKNOODLES", "Doors", "5 Knobs", ""),
+    ("W", "Doors", "5 Knobs", ""),
+    ("XQC", "Doors", "5 Knobs", ""),
+    ("67", "Doors", "5 Knobs", ""),
+    ("54", "Doors", "5 Knobs", ""),
+    ("41", "Doors", "5 Knobs", ""),
+    ("CHEDDAR BALLS", "Doors", "1 Knob", ""),
+    ("CRUSADERS", "Doors", "5 Stardust", ""),
+    ("SCREECHSUCKS", "Doors", "25 Knobs", ""),
+
 
     # Sol's RNG
+    ("AnotherRealmCH2", "Sol's RNG", "20 Potion Chests and 5 Rare Potion Chests", ""),
     ("RaidCH2", "Sol's RNG", "3 Red Potion and 1 Red Moon Potion", ""),
     ("UPD20260228", "Sol's RNG", "20 Potion Chests and 5 Rare Potion Chests", ""),
+
 
     # Muscle Legends
     ("mightygems2500", "Muscle Legends", "2,500 Gems", ""),
@@ -385,6 +404,8 @@ PRELOADED_CODES = [
     ("launch250", "Muscle Legends", "250 Gems", ""),
 
     # Dragon Blox
+    ("MARCH", "Dragon Blox", "5 Premium Wishes", ""),
+    ("WEEKENDBOOST", "Dragon Blox", "10 Premium Wishes", ""),
     ("VALENTINE", "Dragon Blox", "5 Premium Wishes", ""),
     ("WHENUPDATE", "Dragon Blox", "10 Premium Wishes", ""),
     ("FEBRUARY", "Dragon Blox", "5 Premium Wishes", ""),
@@ -398,46 +419,50 @@ PRELOADED_CODES = [
     ("HAPPYHOLIDAYS25", "Dragon Blox", "5 Premium Wishes", ""),
     ("XMAS2025", "Dragon Blox", "10 Premium Wishes", ""),
 
+
     # Ninja Legends
     ("soulhunter5", "Ninja Legends", "5 Souls", ""),
-    ("chaosblade1000", "Ninja Legends", "1K Chi", ""),
-    ("christmasninja500", "Ninja Legends", "500 Gems", ""),
+    ("chaosblade1000", "Ninja Legends", "1,000 Chi", ""),
+    ("soulninja1000", "Ninja Legends", "1,000 Chi", ""),
     ("epictrain15", "Ninja Legends", "15 Minutes of Auto-Training", ""),
     ("roboninja15", "Ninja Legends", "15 Minutes of Auto-Training", ""),
-    ("zenmaster15K", "Ninja Legends", "15K Chi", ""),
-    ("soulninja1000", "Ninja Legends", "1K Chi", ""),
-    ("darkelements2000", "Ninja Legends", "2K Chi", ""),
-    ("omegasecrets5000", "Ninja Legends", "5K Chi", ""),
-    ("ultrasecrets10k", "Ninja Legends", "10K Chi", ""),
+    ("christmasninja500", "Ninja Legends", "500 Gems", ""),
+    ("zenmaster15k", "Ninja Legends", "15,000 Chi", ""),
+    ("innerpeace5k", "Ninja Legends", "5,000 Chi", ""),
+    ("skyblades10k", "Ninja Legends", "10,000 Chi", ""),
+    ("darkelements2000", "Ninja Legends", "2,000 Chi", ""),
+    ("silentshadows1000", "Ninja Legends", "1,000 Chi", ""),
+    ("omegasecrets5000", "Ninja Legends", "5,000 Chi", ""),
+    ("ultrasecrets10k", "Ninja Legends", "10,000 Chi", ""),
     ("elementmaster750", "Ninja Legends", "750 Chi", ""),
-    ("secretcrystal1000", "Ninja Legends", "750 Chi", ""),
+    ("secretcrystal1000", "Ninja Legends", "1,000 Chi", ""),
     ("skymaster750", "Ninja Legends", "750 Chi", ""),
-    ("legends700m", "Ninja Legends", "1.2K Chi", ""),
+    ("legends700m", "Ninja Legends", "1,200 Chi", ""),
     ("dojomasters500", "Ninja Legends", "500 Chi", ""),
     ("dragonlegend750", "Ninja Legends", "750 Chi", ""),
     ("zenmaster500", "Ninja Legends", "500 Chi", ""),
     ("epicelements500", "Ninja Legends", "500 Chi", ""),
     ("goldupdate500", "Ninja Legends", "500 Chi", ""),
-    ("legends500m", "Ninja Legends", "1000 Chi", ""),
+    ("legends500M", "Ninja Legends", "1,000 Chi", ""),
     ("senseisanta500", "Ninja Legends", "500 Chi", ""),
     ("blizzardninja500", "Ninja Legends", "500 Chi", ""),
     ("mythicalninja500", "Ninja Legends", "500 Chi", ""),
     ("legendaryninja500", "Ninja Legends", "500 Chi", ""),
     ("shadowninja500", "Ninja Legends", "500 Chi", ""),
-    ("legends200M", "Ninja Legends", "1.1K Chi", ""),
+    ("legends200M", "Ninja Legends", "1,100 Chi", ""),
     ("epicflyingninja500", "Ninja Legends", "500 Chi", ""),
     ("flyingninja500", "Ninja Legends", "500 Chi", ""),
     ("dragonwarrior500", "Ninja Legends", "500 Chi", ""),
     ("swiftblade300", "Ninja Legends", "300 Chi", ""),
     ("DesertNinja250", "Ninja Legends", "250 Chi", ""),
     ("fastninja100", "Ninja Legends", "100 Chi", ""),
-    ("epicninja250", "Ninja Legends", "250 Chi", ""),
-    ("masterninja750", "Ninja Legends", "1K Chi", ""),
+
 
     # Volleyball Legends
-    ("UPDATE_60", "Volleyball Legends", "5 Lucky Style Spins", ""),
-    ("KIJO", "Volleyball Legends", "5 Lucky Style Spins", ""),
-    ("SUPER_TILTS", "Volleyball Legends", "5 Lucky Ability Spins", ""),
+    ("UPDATE_62", "Volleyball Legends", "5 Lucky Style Spins", ""),
+    ("MIKAGE_IS_BACK", "Volleyball Legends", "5 Lucky Style Spins", ""),
+    ("BALL_MACHINES", "Volleyball Legends", "5 Lucky Ability Spins", ""),
+
 
     # === PREMIUM GAMES (password protected) ===
 
@@ -513,20 +538,29 @@ PRELOADED_CODES = [
     ("BOOST", "Rivals", "1 Key", ""),
     ("roblox_rtc", "Rivals", "5 Keys", ""),
 
+
     # Evade
-    ("900", "Evade", "10 Points", ""),
-    ("901", "Evade", "12 Points", ""),
-    ("hdc_roblox", "Evade", "30 Points", ""),
-    ("halloween_23", "Evade", "23 Points", ""),
+    ("HappyNewYears2026", "Evade", "26 Points", ""),
+    ("iloveevadewinterupdate", "Evade", "20 Points", ""),
+    ("THANKSGIVING2025", "Evade", "15 Points", ""),
     ("indebt", "Evade", "30 Points", ""),
     ("indebt2", "Evade", "1000 Tokens", ""),
-    ("THANKSGIVING2025", "Evade", "15 Points", ""),
-    ("iloveevadewinterupdate", "Evade", "20 Points", ""),
-    ("HappyNewYears2026", "Evade", "26 Points", ""),
+    ("halloween_23", "Evade", "23 Points", ""),
+    ("hdc_roblox", "Evade", "30 Points", ""),
+    ("901", "Evade", "12 Points", ""),
+    ("900", "Evade", "10 Points", ""),
+    ("evadethebirthdayboy", "Evade", "40 Points", ""),
+    ("summeroopsies", "Evade", "30 Points", ""),
+    ("summeroopsies2", "Evade", "50 Tickets", ""),
+    ("gullible", "Evade", "30 Points", ""),
+    ("therealdeal", "Evade", "Bird badge", ""),
+
 
     # Hypershot
     ("100K", "Hypershot", "Free Present", ""),
     # Arm Wrestle Simulator
+    ("musiceventnext", "Arm Wrestle Simulator", "3x stat boost for 72 hours", ""),
+    ("slightwaitlol", "Arm Wrestle Simulator", "3x stat boost for 72 hours", ""),
     ("SlightWaitLol", "Arm Wrestle Simulator", "3x stat boost for 72 hours", ""),
     ("thenewlab", "Arm Wrestle Simulator", "3x stat boost for 72 hours", ""),
     ("chaoticbosses", "Arm Wrestle Simulator", "3x stat boost for 72 hours", ""),
@@ -604,7 +638,9 @@ PRELOADED_CODES = [
     ("icecold", "Arm Wrestle Simulator", "3x boost for 24 hours", ""),
     ("forging", "Arm Wrestle Simulator", "3x boost for 24 hours", ""),
     ("axel", "Arm Wrestle Simulator", "50 Wins", ""),
+
     # Waste Time
+    ("clansarefixed", "Waste Time", "Free Rewards", ""),
     ("Chapter3", "Waste Time", "Free Rewards", ""),
     ("yesanothercode", "Waste Time", "Free Rewards", ""),
     ("quick", "Waste Time", "12 Locks", ""),
@@ -635,7 +671,10 @@ PRELOADED_CODES = [
     ("wehavecodesnow", "Waste Time", "x2 Highest Reset Stat", ""),
     ("moreclicksfr", "Waste Time", "+500 Other Button Clicks", ""),
 
+
     # Tap Simulator
+    ("MASTERY", "Tap Simulator", "1 Space Rebirth", ""),
+    ("CLANS", "Tap Simulator", "67 Tokens", ""),
     ("VALENTINES", "Tap Simulator", "1 Love Luck III Potion", ""),
     ("SPEEDYTOTEM", "Tap Simulator", "2 Totems of Hatch Speed", ""),
     ("LUCKYTOTEM", "Tap Simulator", "1 Totem of Luck", ""),
@@ -645,40 +684,46 @@ PRELOADED_CODES = [
     ("russo", "Tap Simulator", "Five Tokens", ""),
     ("enchant", "Tap Simulator", "Five Enchant Crystals", ""),
 
+
     # Yeet a Friend
-    ("YEETOLYMPICS", "Yeet a Friend", "10K Stars", ""),
-    ("YAFTOBER", "Yeet a Friend", "Free Boosts", ""),
-    ("GRAFFITI", "Yeet a Friend", "Power Boost", ""),
-    ("GOTHICSCHOOL", "Yeet a Friend", "Energy, Luck, Power, Magnet and Rock Fuel Boosts", ""),
-    ("Camp", "Yeet a Friend", "2 Magnet10 Boost", ""),
-    ("Octopus", "Yeet a Friend", "Energy, Luck, Power, Magnet and Rock Fuel Boosts", ""),
+    ("YEETGOAT", "Yeet a Friend", "10k Stars", ""),
+    ("YEETOLYMPICS", "Yeet a Friend", "10k Stars", ""),
+    ("NYCOUNTDOWN", "Yeet a Friend", "Boosts", ""),
+    ("TURKEYEET", "Yeet a Friend", "Boosts", ""),
+    ("YAFTOBER", "Yeet a Friend", "Boosts", ""),
+    ("GRAFFITI", "Yeet a Friend", "3 Energy Boost, 3 Power Boost, 3 Luck Boost", ""),
+    ("GOTHICSCHOOL", "Yeet a Friend", "3 Energy Boost, 3 Power Boost, 3 Luck Boost", ""),
+    ("Camp", "Yeet a Friend", "1 Magneto Boost", ""),
+    ("OCTOPUS", "Yeet a Friend", "Rewards", ""),
     ("BOMBARDINO", "Yeet a Friend", "Mythic Slime Pet", ""),
     ("GYMSTAR", "Yeet a Friend", "7.77k Stars", ""),
     ("SUPERCAR", "Yeet a Friend", "3 Wheel Spins", ""),
-    ("VALENTINE", "Yeet a Friend", "3 Energy Boosts, 3 Luck Boosts, 3 Power Boosts", ""),
+    ("VALENTINE", "Yeet a Friend", "3 Energy Boosts, 3 Power Boosts, 3 Luck Boosts", ""),
     ("OLYMP", "Yeet a Friend", "Mythic Slime Pet", ""),
     ("IPLAYEVERYDAY", "Yeet a Friend", "Legendary Slime Pet", ""),
-    ("Junk", "Yeet a Friend", "Power Boost", ""),
-    ("Halloween", "Yeet a Friend", "50K Stars", ""),
-    ("XMAS24", "Yeet a Friend", "30K Stars", ""),
-    ("CHRISTMAS", "Yeet a Friend", "10k Stars", ""),
-    ("GIFTING", "Yeet a Friend", "5 Wheel Spins", ""),
-    ("Reap", "Yeet a Friend", "10k Stars", ""),
-    ("Aztec", "Yeet a Friend", "3 Wheel Spins", ""),
-    ("MAGIC", "Yeet a Friend", "x3 Energy Boost", ""),
-    ("AFK", "Yeet a Friend", "x2 Luck Boost", ""),
-    ("Glacier", "Yeet a Friend", "10k Stars", ""),
-    ("Enchanted", "Yeet a Friend", "5k Stars", ""),
-    ("Teleporter", "Yeet a Friend", "5k Stars", ""),
-    ("EASYEET", "Yeet a Friend", "Power Boost", ""),
-    ("DimensionBoost", "Yeet a Friend", "Energy Boost", ""),
-    ("Dimension", "Yeet a Friend", "Power Boost", ""),
+    ("iLoveYeeting", "Yeet a Friend", "Legendary Slime Pet", ""),
+    ("Halloween", "Yeet a Friend", "50k Stars", ""),
+    ("XMAS24", "Yeet a Friend", "30k Stars", ""),
     ("Collector", "Yeet a Friend", "10k Stars", ""),
     ("StarShopper", "Yeet a Friend", "5k Stars", ""),
-    ("YeetCartoon", "Yeet a Friend", "Power Boost", ""),
+    ("Happy2024", "Yeet a Friend", "50k Stars", ""),
     ("FreeStars", "Yeet a Friend", "750 Stars", ""),
-    ("FreePower", "Yeet a Friend", "Power Boost", ""),
-    ("iLoveYeeting", "Yeet a Friend", "Legendary Slime Pet", ""),
+    ("Enchanted", "Yeet a Friend", "5k Stars", ""),
+    ("Glacier", "Yeet a Friend", "10k Stars", ""),
+    ("Teleporter", "Yeet a Friend", "5k Stars", ""),
+    ("CHRISTMAS", "Yeet a Friend", "10k Stars", ""),
+    ("Dimension", "Yeet a Friend", "2 Power Boosts", ""),
+    ("YeetCartoon", "Yeet a Friend", "2 Power Boosts", ""),
+    ("DIMENSIONBOOST", "Yeet a Friend", "2 Energy Boosts", ""),
+    ("AFK", "Yeet a Friend", "2 Luck Boosts", ""),
+    ("AZTEC", "Yeet a Friend", "3 Wheel Spins", ""),
+    ("REAP", "Yeet a Friend", "10k Stars", ""),
+    ("EASYEET", "Yeet a Friend", "2 Power Boosts", ""),
+    ("Magic", "Yeet a Friend", "3 Energy Boosts", ""),
+    ("GIFTING", "Yeet a Friend", "5 Wheel Spins", ""),
+    ("Junk", "Yeet a Friend", "3 Power Boosts", ""),
+    ("FreePower", "Yeet a Friend", "1 Power Boost", ""),
+
 
     # Youtube Simulator Z
     ("RUBY_Z", "Youtube Simulator Z", "Access to a room that rains Rubies", ""),
@@ -705,15 +750,21 @@ PRELOADED_CODES = [
     ("FallEndsSoon", "Anime Vanguards", "50 Rerolls, 25000 Leaves", ""),
     ("2026", "Anime Vanguards", "200 Rerolls (level 30 required)", ""),
 
+
     # 99 Nights in the Forest
     ("afterparty", "99 Nights in the Forest", "15 Gems", ""),
     ("yay fishing", "99 Nights in the Forest", "2 Gems (type in chat while fishing)", ""),
     ("DIAMONDS", "99 Nights in the Forest", "15 Gems", ""),
 
     # Destroy Grandma
+    ("SLUNGPY1M", "Destroy Grandma", "Free Rewards", ""),
+    ("404", "Destroy Grandma", "Free Rewards", ""),
+    ("RESTAURANT", "Destroy Grandma", "1 Table Item, 25 Coins, 100 XP", ""),
+    ("LOBBY", "Destroy Grandma", "100 Coins and 100 XP", ""),
     ("BETA", "Destroy Grandma", "15,000 Cash", ""),
     ("YGDS!", "Destroy Grandma", "15,000 Cash", ""),
     ("DESTROY", "Destroy Grandma", "2x XP and Mastery Boost for 15 minutes", ""),
+
 
     # Bed Wars
     ("Femboy-yuzi", "Bed Wars", "Kit", ""),
@@ -735,18 +786,21 @@ PRELOADED_CODES = [
     ("200KMEMBERS", "Driving Empire", "50,000 Cash", ""),
     ("NEWYEAR2025", "Driving Empire", "75,000 Cash", ""),
     ("ZOOM", "Driving Empire", "2023 Fairway Zoomer", ""),
+
     # Anime Infinity
-    ("9KFavs!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
-    ("MBShutdown!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
-    ("Update3!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
-    ("NewGamemode!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
-    ("Fusion!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
-    ("YOSHAA!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
-    ("DelayInfinity!", "Anime Infinity", "15x Trait Shards, 3x Rainbow Orbs, 1.5k Gems", ""),
+    ("LUNAR_FAREWELL", "Anime Infinity", "50 Spins", ""),
+    ("300K_SUBS", "Anime Infinity", "50 Spins", ""),
+    ("200K_SUBS", "Anime Infinity", "50 Spins", ""),
+    ("100K_SUBS", "Anime Infinity", "50 Spins", ""),
+    ("1M_MEMBERS", "Anime Infinity", "200 Spins", ""),
+
 
     # Basketball Legends
+    ("50KVISITS", "Basketball Legends", "200 XP Boost", ""),
+    ("30KVISITS", "Basketball Legends", "150 XP Boost", ""),
+    ("UPDATE2", "Basketball Legends", "100 Cash", ""),
     ("500KFAVS", "Basketball Legends", "Free Rewards", ""),
-    ("TURKEY25", "Basketball Legends", "1x Halloween Skin Case (FL) or 1x Halloween Effect Case (BL)", ""),
+    ("TURKEY25", "Basketball Legends", "1x Halloween Skin Case or 1x Halloween Effect Case", ""),
     ("CLANS", "Basketball Legends", "1x Halloween Case", ""),
     ("DELAYED", "Basketball Legends", "1x Halloween Skin Case", ""),
     ("SUPERSPOOKY", "Basketball Legends", "1x Halloween Case", ""),
@@ -763,6 +817,7 @@ PRELOADED_CODES = [
     ("320KLIKES", "Basketball Legends", "5K Coins", ""),
     ("310KLIKES", "Basketball Legends", "5K Coins", ""),
     ("COINBOOST", "Basketball Legends", "2x Coin Boost for 30 minutes", ""),
+
     # Deathball
     ("KSTELLAR", "Deathball", "25,000 Gems", ""),
     ("SUPERNOVANOW", "Deathball", "25,000 Gems", ""),
