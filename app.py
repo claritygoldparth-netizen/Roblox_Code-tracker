@@ -26,7 +26,7 @@ ROBLOX_GAMES = [
     "Jailbreak", "Adopt Me!", "Murder Mystery 2", "Tower of Hell",
     "Brookhaven", "Royale High", "Doors", "Anime Adventures",
     "Sol's RNG", "Arcane Odyssey", "Muscle Legends", "Dragon Blox",
-    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Driving Empire", "Anime Infinity", "Basketball Legends", "Deathball", "Other"
+    "Ninja Legends", "Work at a Pizza Place", "Volleyball Legends", "Rivals", "Evade", "Hypershot", "Arm Wrestle Simulator", "Waste Time", "Tap Simulator", "Yeet a Friend", "Youtube Simulator Z", "Anime Vanguards", "99 Nights in the Forest", "Destroy Grandma", "Bed Wars", "Driving Empire", "Anime Infinity", "Basketball Legends", "Deathball", "Survive Raft for 50 Days", "Forge", "Other"
 ]
 
 PREMIUM_GAMES = [
@@ -63,38 +63,54 @@ PRELOADED_CODES = [
     ("Sub2OfficialNoobie", "Blox Fruits", "2x EXP for 20 minutes", ""),
 
     # Anime Card Clash
-    ("3UPDATE6", "Anime Card Clash", "New update reward", ""),
-    ("2UPDATE6", "Anime Card Clash", "New update reward", ""),
-    ("1UPDATE6", "Anime Card Clash", "New update reward", ""),
-    ("0ROLLSCHALLENGE", "Anime Card Clash", "Rolls challenge reward", ""),
-    ("PREANNIVERSARY6", "Anime Card Clash", "Pre-anniversary reward", ""),
-    ("PREANNIVERSARY5", "Anime Card Clash", "Pre-anniversary reward", ""),
-    ("PREANNIVERSARY4", "Anime Card Clash", "Pre-anniversary reward", ""),
-    ("PREANNIVERSARY3", "Anime Card Clash", "Pre-anniversary reward", ""),
-    ("PREANNIVERSARY2", "Anime Card Clash", "Pre-anniversary reward", ""),
-    ("PREANNIVERSARY1", "Anime Card Clash", "Pre-anniversary reward", ""),
+    ("ANNIDELAY5", "Anime Card Clash", "5x X-Large Luck Potions, 5x X-Large Roll Speed Potions, 5x Boss Chance Potions, 3x Moon Cycle Reroll, 2x Border Chance Potion, 50x Trait Reroll, 5x 250K Instant Rolls", ""),
+    ("ANNIDELAY4", "Anime Card Clash", "5x X-Large Luck Potions, 5x X-Large Roll Speed Potions, 5x Boss Chance Potions, 3x Moon Cycle Reroll, 2x Border Chance Potion, 50x Trait Reroll, 3x 250K Instant Rolls", ""),
+    ("ANNIDELAY3", "Anime Card Clash", "5x X-Large Luck Potions, 5x X-Large Roll Speed Potions, 5x Boss Chance Potions, 3x Moon Cycle Reroll, 2x Border Chance Potion, 50x Trait Reroll, 2x 250K Instant Rolls", ""),
+    ("ANNIDELAY2", "Anime Card Clash", "5x X-Large Luck Potions, 5x X-Large Roll Speed Potions, 2x Boss Chance Potions, 3x Moon Cycle Reroll, 2x Border Chance Potion, 50x Trait Reroll, 5x 100K Instant Rolls", ""),
+    ("ANNIDELAY1", "Anime Card Clash", "5x Large Luck Potions, 5x Large Roll Speed Potions, 2x Boss Chance Potions, 3x Moon Cycle Reroll, 2x Border Chance Potion, 2x 50K Instant Rolls", ""),
 
 
     # Bubble Gum Simulator
-    ("flowers", "Bubble Gum Simulator", "Secret Elixirs", ""),
-    ("spring", "Bubble Gum Simulator", "Egg Elixirs", ""),
-    ("world3", "Bubble Gum Simulator", "Secret Elixir and Lucky Infinity", ""),
-    ("update18", "Bubble Gum Simulator", "Infinity Elixirs", ""),
-    ("update17", "Bubble Gum Simulator", "Infinity Elixirs", ""),
-    ("update16", "Bubble Gum Simulator", "Secret Elixir and Lucky Infinity", ""),
-    ("update15", "Bubble Gum Simulator", "Lucky Elixir and Lucky Infinity", ""),
+    ("ogbgs", "Bubble Gum Simulator", "3x Infinity Elixir", ""),
+    ("throwback", "Bubble Gum Simulator", "3x Eggs Elixir", ""),
+    ("halloween", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("obby", "Bubble Gum Simulator", "Obby keys and crates", ""),
+    ("milestones", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("season7", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("update18", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("update17", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("update16", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("onemorebonus", "Bubble Gum Simulator", "1 of each Infinity Potion and 5 Secret Elixir", ""),
+    ("update15", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("world3", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("fishe", "Bubble Gum Simulator", "Secret and Infinity Elixir", ""),
+    ("update13", "Bubble Gum Simulator", "12x Infinity Elixir", ""),
+    ("update12", "Bubble Gum Simulator", "12x Infinity Elixir", ""),
+    ("update11", "Bubble Gum Simulator", "10x Infinity Elixir", ""),
+    ("update10", "Bubble Gum Simulator", "12x Infinity Elixir", ""),
+    ("update9", "Bubble Gum Simulator", "3x Light Box, 3x Egg Elixir, 5x Mythic Evolved", ""),
+    ("update8", "Bubble Gum Simulator", "3x Infinity Elixir", ""),
+    ("update6", "Bubble Gum Simulator", "2x Infinity Elixir and 3x Ancient Token", ""),
+    ("update5", "Bubble Gum Simulator", "2x Infinity Elixir", ""),
+    ("update4", "Bubble Gum Simulator", "2x Infinity Elixir and 5x Mystery Box", ""),
+    ("sylentlyssorry", "Bubble Gum Simulator", "3x Infinity Elixir, 1x Giant Dice, 1x Golden Dice", ""),
+    ("update3", "Bubble Gum Simulator", "2x Dice and 2x Giant Dice", ""),
+    ("update2", "Bubble Gum Simulator", "5 Mystery Gifts", ""),
+    ("Easter", "Bubble Gum Simulator", "4 Mystery Gifts", ""),
+    ("Release", "Bubble Gum Simulator", "1 Mystery Gift", ""),
+    ("Lucky", "Bubble Gum Simulator", "1 Luck Potion V", ""),
 
 
     # Basketball Zero
-    ("JUDGEMENT", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
-    ("30JUDGEMENT", "Basketball Zero", "25 Lucky Spins, 100,000 Money", ""),
-    ("1HRJUDGEMENT", "Basketball Zero", "30 Lucky Spins, 150,000 Money", ""),
+    ("NEWSEASON", "Basketball Zero", "20 Lucky Spins, 50,000 Money", ""),
+    ("30NEWSEASON", "Basketball Zero", "25 Lucky Spins, 100,000 Money", ""),
+    ("1HRNEWSEASON", "Basketball Zero", "30 Lucky Spins, 150,000 Money", ""),
 
 
     # Blue Lock: Rivals
-    ("NELSTYLESPINS", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
-    ("NELLUCKY", "Blue Lock: Rivals", "10 Lucky Flow Spins", ""),
-    ("NELPASS", "Blue Lock: Rivals", "300 Ego Tokens", ""),
+    ("RANKEDRETURN", "Blue Lock: Rivals", "10 Lucky Style Spins", ""),
+    ("ITSBACK", "Blue Lock: Rivals", "5 Lucky Style Spins", ""),
+    ("TIMETIME", "Blue Lock: Rivals", "5 Lucky Flow Spins", ""),
 
 
     # Shindo Life
@@ -127,7 +143,7 @@ PRELOADED_CODES = [
     ("neverENDING!", "Shindo Life", "Bonus reward", ""),
     ("RELLbrothr3n!", "Shindo Life", "Bonus reward", ""),
     ("godd00dupdate!", "Shindo Life", "Bonus reward", ""),
-    ("mansUPDATEalreadyg0d!", "Shindo Life", "Bonus reward", ""),
+    ("mansUPDATealreadyg0d!", "Shindo Life", "Bonus reward", ""),
     ("updateDEtingMon!", "Shindo Life", "Bonus reward", ""),
     ("rellseasmoviehuh!", "Shindo Life", "Bonus reward", ""),
     ("RellenSparrow!", "Shindo Life", "Bonus reward", ""),
@@ -212,6 +228,7 @@ PRELOADED_CODES = [
 
 
     # King Legacy
+    ("FIXEDDROPBOOST", "King Legacy", "10x Fortune Tales", ""),
     ("FIXEDBUG1003", "King Legacy", "3x Gold Keys", ""),
     ("Serpent10", "King Legacy", "10x Gems", ""),
     ("FreePterSpin", "King Legacy", "10x Copper Key", ""),
@@ -227,7 +244,8 @@ PRELOADED_CODES = [
 
 
     # Fisch
-    ("FischNewIslandSoon", "Fisch", "1000 Coins, Monochrome Pitchfork rod skin, 5x Starlight Worm, Random Totem", ""),
+    ("EverturnForest", "Fisch", "Driftwood Rod Skin, 1000 Coins, 5x Starlight Worm, 1x Random Hunt Totem", ""),
+    ("NewIslandSoon", "Fisch", "1000 Coins, Monochrome Pitchfork rod skin, 5x Starlight Worm, Random Totem", ""),
     ("StPatricks", "Fisch", "314 Coins, 5x Clover Cluster, Demon-Slayer rod, Clover Rod, Rainbow Totem", ""),
     ("SeventhOfMarch!", "Fisch", "Frigid Beauty Rod Skin", ""),
     ("JungleExpansion", "Fisch", "500 Coins, 5x Thorn Cluster, Random Item", ""),
@@ -346,64 +364,57 @@ PRELOADED_CODES = [
     ("SmythsChandelier2024", "Royale High", "Exclusive reward", ""),
 
     # Doors
-    ("GRACE", "Doors", "1 Knob", ""),
-    ("FE4R_RBX", "Doors", "5 Knobs", ""),
-    ("PRESSURE", "Doors", "No reward", ""),
-    ("L", "Doors", "No Reward", ""),
-    ("/E FREE", "Doors", "1 Knob", ""),
-    ("777", "Doors", "777 Knobs, 7 Stardust, 1 Revive", ""),
-    ("RAGDOLL COMBAT", "Doors", "1 Stardust", ""),
+    ("777", "Doors", "7 Stardust, 777 Knobs, and a Revival", ""),
+    ("NO_DATA", "Doors", "5 Knobs", ""),
     ("LAZYDEVS", "Doors", "50 Knobs", ""),
     ("3rd", "Doors", "33 Knobs", ""),
-    ("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Doors", "5 Knobs", ""),
-    ("RAGDOLL MAYHEM", "Doors", "5 Knobs", ""),
-    ("RAGDOLL UNIVERSE", "Doors", "5 Knobs", ""),
-    ("LORE", "Doors", "5 Knobs", ""),
-    ("FIND THE TROLLFACES", "Doors", "5 Knobs", ""),
-    ("JUMP OVER THE BRICK", "Doors", "1 Stardust", ""),
+    ("RAGDOLL COMBAT", "Doors", "1 Stardust", ""),
     ("PATHSWAP", "Doors", "1 Stardust", ""),
-    ("VOCAB HAVOC", "Doors", "1 Stardust", ""),
-    ("8BITRYAM", "Doors", "5 Knobs", ""),
-    ("ISHOWSPEED", "Doors", "5 Knobs", ""),
+    ("8BITRYAN", "Doors", "5 Knobs", ""),
+    ("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "Doors", "5 Knobs", ""),
     ("BIJUU MIKE", "Doors", "5 Knobs", ""),
     ("DANTDM", "Doors", "5 Knobs", ""),
-    ("KUBZ SCOUTS", "Doors", "5 Knobs", ""),
+    ("FIND THE TROLLFACES", "Doors", "5 Knobs", ""),
+    ("ISHOWSPEED", "Doors", "5 Knobs", ""),
     ("KREEKCRAFT", "Doors", "5 Knobs", ""),
+    ("KUBZ SCOUTS", "Doors", "5 Knobs", ""),
+    ("LORE", "Doors", "5 Knobs", ""),
     ("PENGUINZ0", "Doors", "5 Knobs", ""),
+    ("RAGDOLL MAYHEM", "Doors", "5 Knobs", ""),
+    ("RAGDOLL UNIVERSE", "Doors", "5 Knobs", ""),
     ("THINKNOODLES", "Doors", "5 Knobs", ""),
     ("W", "Doors", "5 Knobs", ""),
     ("XQC", "Doors", "5 Knobs", ""),
-    ("67", "Doors", "5 Knobs", ""),
-    ("54", "Doors", "5 Knobs", ""),
     ("41", "Doors", "5 Knobs", ""),
+    ("54", "Doors", "5 Knobs", ""),
+    ("67", "Doors", "5 Knobs", ""),
     ("CHEDDAR BALLS", "Doors", "1 Knob", ""),
     ("CRUSADERS", "Doors", "5 Stardust", ""),
+    ("GRACE", "Doors", "1 Knob", ""),
+    ("L", "Doors", "No reward", ""),
+    ("Pressure", "Doors", "No reward", ""),
     ("SCREECHSUCKS", "Doors", "25 Knobs", ""),
 
 
     # Sol's RNG
-    ("AnotherRealmCH2", "Sol's RNG", "20 Potion Chests and 5 Rare Potion Chests", ""),
-    ("RaidCH2", "Sol's RNG", "3 Red Potion and 1 Red Moon Potion", ""),
+    ("RaidCH2", "Sol's RNG", "3 Raid Potions and 1 Red Moon Potion", ""),
     ("UPD20260228", "Sol's RNG", "20 Potion Chests and 5 Rare Potion Chests", ""),
 
 
     # Muscle Legends
+    ("SkyAgility50", "Muscle Legends", "500 Agility", ""),
+    ("GalaxyCrystal50", "Muscle Legends", "5,000 Gems", ""),
+    ("Speedy50", "Muscle Legends", "250 Agility", ""),
+    ("MegaLift50", "Muscle Legends", "250 Strength", ""),
+    ("epicmuscle20", "Muscle Legends", "20 Strength", ""),
     ("mightygems2500", "Muscle Legends", "2,500 Gems", ""),
-    ("ultimate250", "Muscle Legends", "250 Strength", ""),
-    ("spacegems50", "Muscle Legends", "5,000 Gems", ""),
-    ("megalift50", "Muscle Legends", "250 Strength", ""),
-    ("speedy50", "Muscle Legends", "250 Agility", ""),
-    ("epicreward500", "Muscle Legends", "500 Gems", ""),
-    ("MillionWarriors", "Muscle Legends", "1,500 Strength", ""),
     ("frostgems10", "Muscle Legends", "10,000 Gems", ""),
     ("Musclestorm50", "Muscle Legends", "1,500 Strength", ""),
-    ("Skyagility50", "Muscle Legends", "500 Agility", ""),
-    ("galaxycrystal50", "Muscle Legends", "5,000 Gems", ""),
-    ("supermuscle100", "Muscle Legends", "200 Strength", ""),
-    ("superpunch100", "Muscle Legends", "100 Strength", ""),
     ("launch250", "Muscle Legends", "250 Gems", ""),
 
     # Dragon Blox
+    ("QUICKPATCH", "Dragon Blox", "5 Premium Wishes", ""),
+    ("BOOSTED", "Dragon Blox", "10 Premium Wishes", ""),
     ("MARCH", "Dragon Blox", "5 Premium Wishes", ""),
     ("WEEKENDBOOST", "Dragon Blox", "10 Premium Wishes", ""),
     ("VALENTINE", "Dragon Blox", "5 Premium Wishes", ""),
@@ -421,47 +432,51 @@ PRELOADED_CODES = [
 
 
     # Ninja Legends
-    ("soulhunter5", "Ninja Legends", "5 Souls", ""),
+    ("legends100m", "Ninja Legends", "Reward", ""),
     ("chaosblade1000", "Ninja Legends", "1,000 Chi", ""),
-    ("soulninja1000", "Ninja Legends", "1,000 Chi", ""),
-    ("epictrain15", "Ninja Legends", "15 Minutes of Auto-Training", ""),
-    ("roboninja15", "Ninja Legends", "15 Minutes of Auto-Training", ""),
-    ("christmasninja500", "Ninja Legends", "500 Gems", ""),
-    ("zenmaster15k", "Ninja Legends", "15,000 Chi", ""),
-    ("innerpeace5k", "Ninja Legends", "5,000 Chi", ""),
-    ("skyblades10k", "Ninja Legends", "10,000 Chi", ""),
-    ("darkelements2000", "Ninja Legends", "2,000 Chi", ""),
-    ("silentshadows1000", "Ninja Legends", "1,000 Chi", ""),
-    ("omegasecrets5000", "Ninja Legends", "5,000 Chi", ""),
-    ("ultrasecrets10k", "Ninja Legends", "10,000 Chi", ""),
-    ("elementmaster750", "Ninja Legends", "750 Chi", ""),
-    ("secretcrystal1000", "Ninja Legends", "1,000 Chi", ""),
-    ("skymaster750", "Ninja Legends", "750 Chi", ""),
-    ("legends700m", "Ninja Legends", "1,200 Chi", ""),
-    ("dojomasters500", "Ninja Legends", "500 Chi", ""),
-    ("dragonlegend750", "Ninja Legends", "750 Chi", ""),
-    ("zenmaster500", "Ninja Legends", "500 Chi", ""),
-    ("epicelements500", "Ninja Legends", "500 Chi", ""),
-    ("goldupdate500", "Ninja Legends", "500 Chi", ""),
-    ("legends500M", "Ninja Legends", "1,000 Chi", ""),
-    ("senseisanta500", "Ninja Legends", "500 Chi", ""),
-    ("blizzardninja500", "Ninja Legends", "500 Chi", ""),
-    ("mythicalninja500", "Ninja Legends", "500 Chi", ""),
-    ("legendaryninja500", "Ninja Legends", "500 Chi", ""),
-    ("shadowninja500", "Ninja Legends", "500 Chi", ""),
-    ("legends200M", "Ninja Legends", "1,100 Chi", ""),
-    ("epicflyingninja500", "Ninja Legends", "500 Chi", ""),
-    ("flyingninja500", "Ninja Legends", "500 Chi", ""),
-    ("dragonwarrior500", "Ninja Legends", "500 Chi", ""),
-    ("swiftblade300", "Ninja Legends", "300 Chi", ""),
-    ("DesertNinja250", "Ninja Legends", "250 Chi", ""),
-    ("fastninja100", "Ninja Legends", "100 Chi", ""),
+    ("SENSEISANTA500", "Ninja Legends", "500 Chi", ""),
+    ("GOLDUPDATE500", "Ninja Legends", "500 Chi", ""),
+    ("EPICELEMENTS500", "Ninja Legends", "500 Chi", ""),
+    ("ZENMASTER500", "Ninja Legends", "500 Chi", ""),
+    ("DOJOMASTERS500", "Ninja Legends", "500 Chi", ""),
+    ("ULTRASECRETS10K", "Ninja Legends", "10,000 Chi", ""),
+    ("SILENTSHADOWS1000", "Ninja Legends", "1,000 Chi", ""),
+    ("OMEGASECRETS5000", "Ninja Legends", "5,000 Chi", ""),
+    ("SOULNINJA1000", "Ninja Legends", "1,000 Chi", ""),
+    ("DRAGONLEGEND750", "Ninja Legends", "750 Chi", ""),
+    ("SECRETCRYSTAL1000", "Ninja Legends", "1,000 Chi", ""),
+    ("LEGENDS500M", "Ninja Legends", "1,000 Chi", ""),
+    ("BLIZZARDNINJA500", "Ninja Legends", "500 Chi", ""),
+    ("LEGENDS200M", "Ninja Legends", "1,100 Chi", ""),
+    ("SPARKNINJA20", "Ninja Legends", "20 Chi", ""),
+    ("LEGENDARYNINJA500", "Ninja Legends", "500 Chi", ""),
+    ("SWIFTBLADE300", "Ninja Legends", "300 Chi", ""),
+    ("MASTERNINJA750", "Ninja Legends", "750 Chi", ""),
+    ("DESERTNINJA250", "Ninja Legends", "250 Chi", ""),
+    ("SHADOWNINJA500", "Ninja Legends", "500 Chi", ""),
+    ("SOULHUNTER5", "Ninja Legends", "5 Souls", ""),
+    ("DRAGONWARRIOR500", "Ninja Legends", "500 Chi", ""),
+    ("EPICFLYINGNINJA500", "Ninja Legends", "500 Chi", ""),
+    ("CHRISTMASNINJA500", "Ninja Legends", "500 Gems", ""),
+    ("ROBONINJA15", "Ninja Legends", "15 Min Auto-Training", ""),
+    ("SKYMASTER750", "Ninja Legends", "750 Chi", ""),
+    ("EPICTRAIN15", "Ninja Legends", "15 Min Auto-Training", ""),
+    ("INNERPEACE5K", "Ninja Legends", "5,000 Chi", ""),
+    ("SKYBLADES10K", "Ninja Legends", "10,000 Chi", ""),
+    ("ZENMASTER15K", "Ninja Legends", "15,000 Chi", ""),
+    ("DARKELEMENTS2000", "Ninja Legends", "2,000 Chi", ""),
+    ("ELEMENTMASTER750", "Ninja Legends", "750 Chi", ""),
+    ("LEGENDS700M", "Ninja Legends", "1,200 Chi", ""),
+    ("MYTHICALNINJA500", "Ninja Legends", "500 Chi", ""),
+    ("FLYINGNINJA500", "Ninja Legends", "500 Chi", ""),
+    ("FASTNINJA100", "Ninja Legends", "100 Chi", ""),
+    ("EPICNINJA250", "Ninja Legends", "250 Chi", ""),
 
 
     # Volleyball Legends
-    ("UPDATE_62", "Volleyball Legends", "5 Lucky Style Spins", ""),
-    ("MIKAGE_IS_BACK", "Volleyball Legends", "5 Lucky Style Spins", ""),
-    ("BALL_MACHINES", "Volleyball Legends", "5 Lucky Ability Spins", ""),
+    ("UPDATE_63", "Volleyball Legends", "5 Lucky Style Spins", ""),
+    ("EVO_RARITY", "Volleyball Legends", "5 Lucky Style Spins", ""),
+    ("STRETCH", "Volleyball Legends", "5 Lucky Ability Spins", ""),
 
 
     # === PREMIUM GAMES (password protected) ===
@@ -540,20 +555,12 @@ PRELOADED_CODES = [
 
 
     # Evade
-    ("HappyNewYears2026", "Evade", "26 Points", ""),
+    ("indebt2", "Evade", "1000 Tokens", ""),
+    ("hdc_roblox", "Evade", "30 Points", ""),
     ("iloveevadewinterupdate", "Evade", "20 Points", ""),
     ("THANKSGIVING2025", "Evade", "15 Points", ""),
     ("indebt", "Evade", "30 Points", ""),
-    ("indebt2", "Evade", "1000 Tokens", ""),
-    ("halloween_23", "Evade", "23 Points", ""),
-    ("hdc_roblox", "Evade", "30 Points", ""),
-    ("901", "Evade", "12 Points", ""),
-    ("900", "Evade", "10 Points", ""),
-    ("evadethebirthdayboy", "Evade", "40 Points", ""),
-    ("summeroopsies", "Evade", "30 Points", ""),
-    ("summeroopsies2", "Evade", "50 Tickets", ""),
-    ("gullible", "Evade", "30 Points", ""),
-    ("therealdeal", "Evade", "Bird badge", ""),
+    ("therealdeal", "Evade", "Bird Badge Cosmetic", ""),
 
 
     # Hypershot
@@ -737,6 +744,9 @@ PRELOADED_CODES = [
     ("YTZ", "Youtube Simulator Z", "General reward", ""),
 
     # Anime Vanguards
+    ("150KYT", "Anime Vanguards", "50 Rerolls and 50 Memoria Shards", ""),
+    ("LATECUSTOMLEVEL", "Anime Vanguards", "50 Rerolls and 50 Memoria Shards", ""),
+    ("MOONLESS", "Anime Vanguards", "5000 Gems and 50 Stat Chips", ""),
     ("Chainsaws", "Anime Vanguards", "5000 Gems, 20 Rerolls, 20 Memoria Shards", ""),
     ("1WeekDelay", "Anime Vanguards", "50 Rerolls, 50 Memoria Shards", ""),
     ("NoCustoms", "Anime Vanguards", "10000 Gems, 30 Rerolls, 30 Memoria Shards", ""),
@@ -754,53 +764,55 @@ PRELOADED_CODES = [
     # 99 Nights in the Forest
     ("afterparty", "99 Nights in the Forest", "15 Gems", ""),
     ("yay fishing", "99 Nights in the Forest", "2 Gems (type in chat while fishing)", ""),
-    ("DIAMONDS", "99 Nights in the Forest", "15 Gems", ""),
 
     # Destroy Grandma
     ("SLUNGPY1M", "Destroy Grandma", "Free Rewards", ""),
     ("404", "Destroy Grandma", "Free Rewards", ""),
-    ("RESTAURANT", "Destroy Grandma", "1 Table Item, 25 Coins, 100 XP", ""),
-    ("LOBBY", "Destroy Grandma", "100 Coins and 100 XP", ""),
-    ("BETA", "Destroy Grandma", "15,000 Cash", ""),
-    ("YGDS!", "Destroy Grandma", "15,000 Cash", ""),
-    ("DESTROY", "Destroy Grandma", "2x XP and Mastery Boost for 15 minutes", ""),
+    ("GAMEMODE2024", "Destroy Grandma", "2 Crates", ""),
+    ("RESTAURANT", "Destroy Grandma", "25 Coins, 100 XP, Table Item", ""),
+    ("LOBBY", "Destroy Grandma", "100 Coins, 100 XP", ""),
 
 
     # Bed Wars
     ("Femboy-yuzi", "Bed Wars", "Kit", ""),
     # Driving Empire
     ("10KITS", "Driving Empire", "10 Tuning Kits", ""),
-    ("MARCH2026", "Driving Empire", "Chevrolet Camaro ZL1", ""),
-    ("HAPPY2026", "Driving Empire", "New Year gift", ""),
-    ("HAPPYXMAS", "Driving Empire", "Festive themed bike", ""),
+    ("MARCH2026", "Driving Empire", "2012 Chevrolet Camaro ZL1", ""),
+    ("HAPPY2026", "Driving Empire", "2015 Renault Twizy", ""),
+    ("HAPPYXMAS", "Driving Empire", "Bike Skin", ""),
     ("CALL911", "Driving Empire", "50,911 Cash", ""),
-    ("GOBBLEGOBBLE", "Driving Empire", "10 Tuning Kits", ""),
+    ("GOBBLEGOBBLE", "Driving Empire", "Tuning Kits", ""),
     ("SPOOKY", "Driving Empire", "80,000 Cash", ""),
     ("VEGAS2025", "Driving Empire", "50,000 Cash", ""),
     ("WHOOPS", "Driving Empire", "75,000 Cash", ""),
-    ("RDCNASCAR25", "Driving Empire", "Driving Empire NASCAR", ""),
-    ("2MLIKES", "Driving Empire", "2017 Nissan GT-R Bolt", ""),
+    ("RDCNASCAR25", "Driving Empire", "NASCAR Toyota Camry XSE", ""),
+    ("2MLIKES", "Driving Empire", "2017 Nissan GT-R", ""),
+    ("BADGUYS2", "Driving Empire", "Betty Beater", ""),
     ("NASCAR100M", "Driving Empire", "200 Trophies", ""),
-    ("CUSTOMIZATION2025", "Driving Empire", "10 Tuning Kits", ""),
-    ("1MILCASH", "Driving Empire", "1 Cash", ""),
+    ("CUSTOMIZATION2025", "Driving Empire", "Tuning Kits", ""),
+    ("ZOOM", "Driving Empire", "Fairway Zoomer", ""),
     ("200KMEMBERS", "Driving Empire", "50,000 Cash", ""),
     ("NEWYEAR2025", "Driving Empire", "75,000 Cash", ""),
-    ("ZOOM", "Driving Empire", "2023 Fairway Zoomer", ""),
 
     # Anime Infinity
-    ("LUNAR_FAREWELL", "Anime Infinity", "50 Spins", ""),
-    ("300K_SUBS", "Anime Infinity", "50 Spins", ""),
-    ("200K_SUBS", "Anime Infinity", "50 Spins", ""),
-    ("100K_SUBS", "Anime Infinity", "50 Spins", ""),
-    ("1M_MEMBERS", "Anime Infinity", "200 Spins", ""),
+    ("100KFAV", "Anime Infinity", "Free Rewards", ""),
+    ("Update4", "Anime Infinity", "Free Rewards", ""),
+    ("25KLIKES", "Anime Infinity", "Free Rewards", ""),
+    ("6KPlayers", "Anime Infinity", "Free Rewards", ""),
+    ("3MVISITS", "Anime Infinity", "Free Rewards", ""),
+    ("100KVisits!", "Anime Infinity", "10 Stat Rerolls, 3 Infinity Tickets", ""),
+    ("SryForLongMaintenance", "Anime Infinity", "Free Rewards", ""),
 
 
     # Basketball Legends
-    ("50KVISITS", "Basketball Legends", "200 XP Boost", ""),
-    ("30KVISITS", "Basketball Legends", "150 XP Boost", ""),
-    ("UPDATE2", "Basketball Legends", "100 Cash", ""),
+    ("SPRINGGREEN", "Basketball Legends", "Spring Effect Case", ""),
+    ("SPRINGSKINS", "Basketball Legends", "Spring Skin Case", ""),
+    ("TRADEHUB", "Basketball Legends", "Free Rewards", ""),
+    ("HEARTBURST", "Basketball Legends", "Free exclusive effect", ""),
+    ("VALENTINES", "Basketball Legends", "Free Rewards", ""),
+    ("JANUARY", "Basketball Legends", "Free Rewards", ""),
     ("500KFAVS", "Basketball Legends", "Free Rewards", ""),
-    ("TURKEY25", "Basketball Legends", "1x Halloween Skin Case or 1x Halloween Effect Case", ""),
+    ("TURKEY25", "Basketball Legends", "1x Halloween Effect Case", ""),
     ("CLANS", "Basketball Legends", "1x Halloween Case", ""),
     ("DELAYED", "Basketball Legends", "1x Halloween Skin Case", ""),
     ("SUPERSPOOKY", "Basketball Legends", "1x Halloween Case", ""),
@@ -819,7 +831,9 @@ PRELOADED_CODES = [
     ("COINBOOST", "Basketball Legends", "2x Coin Boost for 30 minutes", ""),
 
     # Deathball
-    ("KSTELLAR", "Deathball", "25,000 Gems", ""),
+    ("MISAKI", "Deathball", "25,000 Gems", ""),
+    ("NEWEVO", "Deathball", "500 Crystals", ""),
+    ("STELLAR", "Deathball", "25,000 Gems", ""),
     ("SUPERNOVANOW", "Deathball", "25,000 Gems", ""),
     ("SUPERNOVASOON", "Deathball", "25,000 Gems", ""),
     ("DRAGONQUEST", "Deathball", "25,000 Gems", ""),
@@ -838,6 +852,13 @@ PRELOADED_CODES = [
     ("FREEGEMS", "Deathball", "500 Crystals", ""),
     ("GHOSTMODE", "Deathball", "500 Crystals", ""),
     ("DRPLAGUE", "Deathball", "500 Crystals", ""),
+    ("RANKEDFFA", "Deathball", "500 Crystals", ""),
+    ("COOKEDCHIKIN", "Deathball", "500 Crystals", ""),
+    ("OGISHERE", "Deathball", "500 Crystals", ""),
+    ("NOSTALGIA", "Deathball", "500 Crystals", ""),
+    ("GALAXY", "Deathball", "500 Crystals", ""),
+    ("BIZARRE", "Deathball", "50 Cosmic Orbs", ""),
+
 ]
 
 
@@ -1015,6 +1036,54 @@ def delete_code(code_id):
         db.execute("DELETE FROM codes WHERE id=?", (code_id,))
         db.commit()
     return redirect(request.referrer or url_for("index"))
+
+
+
+OWNER_PASSWORD = "PARTHISTHEBESTOWNEROFALLTIME"
+
+@app.route("/owner", methods=["GET", "POST"])
+def owner():
+    if request.method == "POST":
+        action = request.form.get("action")
+        
+        if action == "login":
+            pwd = request.form.get("password", "").strip()
+            if pwd == OWNER_PASSWORD:
+                session["owner"] = True
+            return redirect(url_for("owner"))
+        
+        if not session.get("owner"):
+            return redirect(url_for("owner"))
+            
+        if action == "add":
+            code = request.form.get("code", "").strip()
+            game = request.form.get("game", "").strip()
+            desc = request.form.get("desc", "").strip()
+            exp = request.form.get("exp", "").strip()
+            if code and game:
+                with get_db() as db:
+                    db.execute("INSERT INTO codes (code, game, desc, exp) VALUES (?, ?, ?, ?)",
+                               (code, game, desc, exp))
+                    db.commit()
+        
+        elif action == "delete":
+            code_id = request.form.get("code_id")
+            if code_id:
+                with get_db() as db:
+                    db.execute("DELETE FROM codes WHERE id=?", (code_id,))
+                    db.commit()
+        
+        elif action == "logout":
+            session.pop("owner", None)
+        
+        return redirect(url_for("owner"))
+    
+    if not session.get("owner"):
+        return render_template("owner.html", logged_in=False, codes=[], games=GAMES)
+    
+    db = get_db()
+    codes = [dict(c) for c in db.execute("SELECT * FROM codes ORDER BY added_at DESC").fetchall()]
+    return render_template("owner.html", logged_in=True, codes=codes, games=GAMES)
 
 
 init_db()
