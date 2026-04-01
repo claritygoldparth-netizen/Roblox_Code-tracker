@@ -701,10 +701,10 @@ function fallbackCopy(code, btn, orig, isPrem) {
 }
 
 function showCopied(btn, orig, isPrem) {
-  btn.innerHTML = "👑 Nah I'd Win";
+  btn.innerHTML = isPrem ? "⬜ GOJO" : "👑 Nah I'd Win";
   btn.style.background = "rgba(34,197,94,0.15)";
   btn.style.color = "#86efac";
-  var text = isPrem ? "Except for Saturo Gojo of course." : "Nah. I'd win.";
+  var text = isPrem ? "J J K." : "Nah. I'd win.";
   speakText(text);
   setTimeout(function() { btn.innerHTML = orig; btn.removeAttribute('style'); }, 1800);
 }
