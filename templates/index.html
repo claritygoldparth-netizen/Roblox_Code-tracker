@@ -674,29 +674,41 @@ function toggleForm() {
 }
 
 function copyCode(code, btn, isPremium) {
-  const orig = btn.innerHTML;
+  var orig = btn.innerHTML;
+  var isPrem = isPremium === true || isPremium === 'true';
   
-  navigator.clipboard.writeText(code).then(function() {
-    btn.innerHTML = "👑 Nah I'd Win";
-    btn.style.background = "rgba(34,197,94,0.15)";
-    btn.style.color = "#86efac";
-    
-    try {
-      var text = isPremium ? "Except for Saturo Gojo of course." : "Nah. I'd win.";
-      speakText(text);
-    } catch(e) {}
-    
-    setTimeout(function() { btn.innerHTML = orig; btn.removeAttribute('style'); }, 1500);
-  }).catch(function() {
-    var ta = document.createElement('textarea');
-    ta.value = code;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
-    btn.innerHTML = "👑 Nah I'd Win";
-    setTimeout(function() { btn.innerHTML = orig; }, 1500);
-  });
+  // Try clipboard API first
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(code).then(function() {
+      showCopied(btn, orig, isPrem);
+    }).catch(function() {
+      fallbackCopy(code, btn, orig, isPrem);
+    });
+  } else {
+    fallbackCopy(code, btn, orig, isPrem);
+  }
+}
+
+function fallbackCopy(code, btn, orig, isPrem) {
+  var ta = document.createElement('textarea');
+  ta.value = code;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try { document.execCommand('copy'); } catch(e) {}
+  document.body.removeChild(ta);
+  showCopied(btn, orig, isPrem);
+}
+
+function showCopied(btn, orig, isPrem) {
+  btn.innerHTML = "👑 Nah I'd Win";
+  btn.style.background = "rgba(34,197,94,0.15)";
+  btn.style.color = "#86efac";
+  var text = isPrem ? "Except for Saturo Gojo of course." : "Nah. I'd win.";
+  speakText(text);
+  setTimeout(function() { btn.innerHTML = orig; btn.removeAttribute('style'); }, 1800);
 }
 
 function syncSearch(val) {
@@ -748,30 +760,26 @@ function spawnParticles(card) {
 function speakText(text) {
   try {
     window.speechSynthesis.cancel();
-    var msg = new SpeechSynthesisUtterance(text);
-    msg.pitch = 0.6;
-    msg.rate = 0.85;
-    msg.volume = 1;
-    msg.lang = "en-US";
-    
-    function doSpeak() {
+    setTimeout(function() {
+      var msg = new SpeechSynthesisUtterance(text);
+      msg.pitch = 0.5;
+      msg.rate = 0.8;
+      msg.volume = 1;
+      msg.lang = "en-US";
       var voices = window.speechSynthesis.getVoices();
-      var maleVoice = voices.find(function(v) {
-        return v.name.includes('Male') || v.name.includes('Daniel') || 
-               v.name.includes('David') || v.name.includes('Alex') || 
-               v.name.includes('Google UK English Male') ||
-               v.name.includes('Microsoft David');
-      });
+      var maleVoice = null;
+      var preferNames = ['Daniel','David','Alex','Fred','Microsoft David','Google UK English Male','en-US-Wavenet'];
+      for (var i = 0; i < preferNames.length; i++) {
+        var found = voices.find(function(v) { return v.name.includes(preferNames[i]); });
+        if (found) { maleVoice = found; break; }
+      }
+      if (!maleVoice) {
+        maleVoice = voices.find(function(v) { return v.lang === 'en-US' && v.name.toLowerCase().includes('male'); });
+      }
       if (maleVoice) msg.voice = maleVoice;
       window.speechSynthesis.speak(msg);
-    }
-    
-    if (window.speechSynthesis.getVoices().length === 0) {
-      window.speechSynthesis.onvoiceschanged = doSpeak;
-    } else {
-      doSpeak();
-    }
-  } catch(e) {}
+    }, 100);
+  } catch(e) { console.log('Speech error:', e); }
 }
 
 function toggleUsed(id, btn) {
@@ -804,9 +812,10 @@ function toggleUsed(id, btn) {
     .catch(function(e) { console.error('Toggle error:', e); });
 }
 
-// Secret owner access - Ctrl+Shift+O
+// Secret owner access - Ctrl+Shift+O (works on Mac too)
 document.addEventListener('keydown', function(e) {
-  if (e.ctrlKey && e.shiftKey && e.key === 'O') {
+  if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'O' || e.key === 'o')) {
+    e.preventDefault();
     window.location.href = '/owner';
   }
 });
