@@ -484,9 +484,7 @@ body::before {
         <input type="hidden" name="action" value="add">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
           <input type="text" name="code" placeholder="Code" required style="background:#080810;border:1px solid #1e1e3a;color:#f0f0ff;padding:10px 14px;border-radius:10px;font-size:14px;outline:none;">
-          <select name="game" style="background:#080810;border:1px solid #1e1e3a;color:#f0f0ff;padding:10px 14px;border-radius:10px;font-size:14px;outline:none;">
-            {% for g in games %}<option value="{{ g }}">{{ g }}</option>{% endfor %}
-          </select>
+          <input type="text" name="game" placeholder="Game name" required style="background:#080810;border:1px solid #1e1e3a;color:#f0f0ff;padding:10px 14px;border-radius:10px;font-size:14px;outline:none;">
           <input type="text" name="desc" placeholder="Reward description" style="grid-column:1/-1;background:#080810;border:1px solid #1e1e3a;color:#f0f0ff;padding:10px 14px;border-radius:10px;font-size:14px;outline:none;">
         </div>
         <button type="submit" style="background:#00e5ff;color:#000;border:none;padding:10px 24px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;margin-right:10px;">Add Code</button>
