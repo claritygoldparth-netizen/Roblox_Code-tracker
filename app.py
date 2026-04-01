@@ -1075,15 +1075,26 @@ def owner():
         
         elif action == "logout":
             session.pop("owner", None)
+    
+    # Handle GET logout
+    if request.args.get("logout"):
+        session.pop("owner", None)
+        return redirect(url_for("owner"))
         
         return redirect(url_for("owner"))
     
     if not session.get("owner"):
-        return render_template("owner.html", logged_in=False, codes=[], games=GAMES)
+        return render_template("index.html",
+            owner_mode=True, logged_in=False, codes=[], games=GAMES,
+            all_games=[], search="", filter_game="", filter_status="",
+            total=0, unused=0, soon=0, premium=False, premium_games=PREMIUM_GAMES)
     
     db = get_db()
     codes = [dict(c) for c in db.execute("SELECT * FROM codes ORDER BY added_at DESC").fetchall()]
-    return render_template("owner.html", logged_in=True, codes=codes, games=GAMES)
+    return render_template("index.html",
+        owner_mode=True, logged_in=True, codes=codes, games=GAMES,
+        all_games=[], search="", filter_game="", filter_status="",
+        total=len(codes), unused=0, soon=0, premium=False, premium_games=PREMIUM_GAMES)
 
 
 init_db()
