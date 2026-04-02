@@ -1097,6 +1097,11 @@ def owner():
         total=len(codes), unused=0, soon=0, premium=False, premium_games=PREMIUM_GAMES)
 
 
+@app.route("/seeds")
+def seeds():
+    return render_template("seeds.html")
+
+
 init_db()
 
 if __name__ == "__main__":
