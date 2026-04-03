@@ -406,20 +406,361 @@ body::before { content:''; position:fixed; inset:0; background: radial-gradient(
       </div>
     </div>
 
-    <!-- PREMIUM LOCKED SEED -->
-    <div class="seed-card premium-card locked" style="position:relative;">
-      <div class="seed-emoji" style="background:linear-gradient(135deg,#1a0a1f,#2a1428);">🏝️✨</div>
-      <div class="seed-body">
-        <div class="seed-header"><div class="seed-title">Crazy Island Build Seeds</div><span class="premium-badge">₹20 Premium</span></div>
-        <div class="seed-tags"><span class="seed-tag premium">Island Seeds</span><span class="seed-tag premium">Epic Builds</span><span class="seed-tag premium">Rare Biomes</span><span class="seed-tag bedrock">Bedrock</span></div>
-        <div class="seed-info">
-          <div class="seed-info-item"><div class="seed-info-label">Seeds</div><div class="seed-info-val">Coming soon...</div></div>
-          <div class="seed-info-item"><div class="seed-info-label">Price</div><div class="seed-info-val">₹20/month</div></div>
+
+    <!-- PREMIUM SEEDS - shown only when unlocked -->
+    <div id="premiumSeeds" style="display:none;grid-column:1/-1;">
+      <div class="seeds-grid" style="margin-top:0;">
+
+        <!-- P1 -->
+        <div class="seed-card premium-card" data-tags="hollow mountain cave terrain java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#1a0a1f,#2a1428);">⛰️🕳️</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Incredible Hollow Mountain</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Hollow Mountain</span><span class="seed-tag premium">Rare Terrain</span><span class="seed-tag premium">Epic Build</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">8486672581758651406</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">A massive mountain with a hollow interior — perfect for building a hidden base inside! One of the most unique terrain generations you can find.</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('8486672581758651406',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
         </div>
-        <div class="seed-desc">Unlock exclusive island seeds and epic build locations — perfect for creative builders and adventurers looking for something special!</div>
-        <div class="seed-actions">
-          <button class="copy-seed-btn" onclick="openModal()" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(255,45,120,0.2));color:#c4b5fd;border-color:rgba(124,58,237,0.3);">🔒 Unlock Premium</button>
+
+        <!-- P2 -->
+        <div class="seed-card premium-card" data-tags="pale mansion pale garden mansion rare java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#1a0a1f,#2a1428);">🏚️🌫️</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">The Pale Mansion</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Pale Garden</span><span class="seed-tag premium">Woodland Mansion</span><span class="seed-tag premium">Creepy Biome</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-7286370756041736131</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">A Woodland Mansion spawned right inside a Pale Garden biome — one of the creepiest and rarest combinations in Minecraft. Perfect for horror-themed builds!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-7286370756041736131',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
         </div>
+
+        <!-- P3 -->
+        <div class="seed-card premium-card" data-tags="grand canyon desert mesa red rock canyon java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#2a1a0a,#3a2010);">🏜️🌋</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Grand Canyon</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Canyon</span><span class="seed-tag premium">Mesa</span><span class="seed-tag premium">Epic Landscape</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-7775094310068025774</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">A massive canyon formation that resembles the real Grand Canyon — stunning red and orange terrain with deep gorges. Perfect for an epic adventure or builder seed!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-7775094310068025774',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- P4 -->
+        <div class="seed-card premium-card" data-tags="pale garden giant huge massive biome java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#1a1f1a,#0a1f14);">🌳🌫️</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Giant Pale Garden</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Giant Pale Garden</span><span class="seed-tag premium">Rare Biome</span><span class="seed-tag premium">Atmospheric</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-1106759604738884840</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Spawn directly inside a giant Pale Garden biome — one of the rarest and most atmospheric biomes in Minecraft. Eerie white trees as far as the eye can see!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-1106759604738884840',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- P5 -->
+        <div class="seed-card premium-card" data-tags="sakura cherry blossom season pink beautiful java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#2a0a1f,#1a0a14);">🌸🌸</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Sakura Season</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Cherry Grove</span><span class="seed-tag premium">Sakura</span><span class="seed-tag premium">Beautiful</span><span class="seed-tag premium">Builder</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-5584399987456711267</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Spawn in a massive, beautiful Cherry Grove biome that stretches as far as you can see — like a full Sakura season in Minecraft. One of the most beautiful builder seeds available!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-5584399987456711267',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- P6 -->
+        <div class="seed-card premium-card" data-tags="pink white cherry mushroom biome pastel java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#2a0a2a,#1f0a1a);">🌸🍄</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Pink and White</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Cherry Grove</span><span class="seed-tag premium">Mushroom Island</span><span class="seed-tag premium">Pastel</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">5063885805507972583</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">A stunning pink and white world featuring Cherry Grove and rare Mushroom Island biomes side by side — a pastel dreamland perfect for aesthetic builds and screenshots!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('5063885805507972583',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- P7 -->
+        <div class="seed-card premium-card" data-tags="desert treeless giant sand dunes mesa java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#2a1f0a,#1f1a0a);">🏜️☀️</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Giant Treeless Desert</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Desert</span><span class="seed-tag premium">Treeless</span><span class="seed-tag premium">Barren</span><span class="seed-tag premium">Challenge</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-8631174543717435159</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">A massive, completely treeless desert that stretches endlessly. Perfect for a hardcore desert survival challenge or building massive sand castle structures with no trees in sight!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-8631174543717435159',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- P8 -->
+        <div class="seed-card premium-card" data-tags="two villages tale double village plains java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#0a1a2a,#0a1420);">🏘️🏘️</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">A Tale of Two Villages</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Two Villages</span><span class="seed-tag premium">Double Spawn</span><span class="seed-tag premium">Rare</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-5831362641909587104</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Two separate villages spawned right next to each other — a rare double village generation. Perfect for trading, resource gathering, and building a mega-city between them!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-5831362641909587104',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- P9 -->
+        <div class="seed-card premium-card" data-tags="diamonds easy surface exposed starter java">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#0a1a2a,#0a0f2a);">💎✨</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Easy Diamonds</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Easy Diamonds</span><span class="seed-tag premium">Starter Seed</span><span class="seed-tag premium">Surface Exposed</span><span class="seed-tag bedrock">Java</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">-4361528937055201680</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Diamonds exposed near the surface — perfect for a head start in survival mode! One of the best starter seeds to get diamonds without hours of deep mining. Great for speedrunners too!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('-4361528937055201680',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional seeds from numbered list -->
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#1a0a1f,#2a1428);">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #1</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag premium">Rare</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">30749108337</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">An exclusive premium seed with unique terrain generation. Explore and discover what makes this seed special!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('30749108337',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#1a0a1f,#2a1428);">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #2</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag premium">Rare</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">69633187309</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">An exclusive premium seed with unique terrain generation. Explore and discover what makes this seed special!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('69633187309',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji" style="background:linear-gradient(135deg,#1a0a1f,#2a1428);">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #3</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag premium">Rare</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">70692476428</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">An exclusive premium seed with unique terrain generation. Explore and discover what makes this seed special!</div>
+            <div class="seed-actions">
+              <button class="copy-seed-btn" onclick="copySeed('70692476428',this)">📋 Copy Seed</button>
+              <button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #4</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">81981520022</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('81981520022',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #5</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">125985050934</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('125985050934',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #6</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">186143472487</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('186143472487',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #7</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">186079875042</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('186079875042',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #8</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">269441545471</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('269441545471',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #9</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">275973386722</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('275973386722',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #10</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">290501486063</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('290501486063',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #11</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">290995772723</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('290995772723',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+        <div class="seed-card premium-card" data-tags="island build premium rare">
+          <div class="seed-emoji">🌍⚡</div>
+          <div class="seed-body">
+            <div class="seed-header"><div class="seed-title">Premium Seed #12</div><span class="premium-badge">₹20 Premium</span></div>
+            <div class="seed-tags"><span class="seed-tag premium">Premium</span><span class="seed-tag bedrock">Bedrock</span></div>
+            <div class="seed-info">
+              <div class="seed-info-item"><div class="seed-info-label">Seed</div><div class="seed-info-val">296748716038</div></div>
+              <div class="seed-info-item"><div class="seed-info-label">Spawn Coords</div><div class="seed-info-val">0, 64, 0</div></div>
+            </div>
+            <div class="seed-desc">Exclusive premium seed — unique terrain awaits!</div>
+            <div class="seed-actions"><button class="copy-seed-btn" onclick="copySeed('296748716038',this)">📋 Copy Seed</button><button class="copy-tp-btn" onclick="copySeed('0 64 0',this)">📍 TP</button></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LOCKED PREMIUM TEASER (shown when not unlocked) -->
+    <div id="premiumTeaser" class="seed-card premium-card" style="grid-column:1/-1;">
+      <div class="seed-body" style="text-align:center;padding:40px 24px;">
+        <div style="font-size:48px;margin-bottom:12px;">🔒</div>
+        <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;margin-bottom:8px;background:linear-gradient(90deg,#7c3aed,#ff2d78);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">21 Premium Seeds Locked</div>
+        <div style="color:#6b7280;font-size:13px;margin-bottom:20px;line-height:1.6;">Hollow Mountains, Grand Canyon, Giant Pale Garden, Sakura Season, Easy Diamonds + 12 more exclusive seeds!<br>Pay ₹20/month to unlock all of them.</div>
+        <button class="premium-btn" onclick="openModal()" style="padding:12px 28px;font-size:14px;">⚡ Unlock Premium Seeds — ₹20/mo</button>
       </div>
     </div>
 
@@ -428,6 +769,8 @@ body::before { content:''; position:fixed; inset:0; background: radial-gradient(
 
 <script>
 // Premium passwords for MC Seeds
+// Check if already unlocked
+if (sessionStorage.getItem('mc_premium')) { setTimeout(function(){ showPremiumSeeds(); }, 100); }
 var MC_PREMIUM_PASSWORDS = ["SEED001"]; // Add passwords here
 
 function openModal() { document.getElementById('unlockModal').classList.add('show'); }
@@ -445,8 +788,10 @@ function tryUnlock() {
 }
 
 function showPremiumSeeds() {
-  // When premium seeds are added they will show here
-  alert('Premium seeds coming soon! You are now unlocked.');
+  document.getElementById('premiumSeeds').style.display = 'grid';
+  document.getElementById('premiumTeaser').style.display = 'none';
+  // Update stats
+  document.querySelector('.stat-num').textContent = '33';
 }
 
 function copySeed(text, btn) {
